@@ -1,0 +1,133 @@
+{
+    "name":"Macaw",
+    "thumbnail":"macaw.png",
+    "screenshot":"macaw.png",
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#000000",
+            "color3":"#07b1d5",
+            "color4":"#838383",
+            "color5":"#acacac",
+            "color6":"#000000",
+            "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Droid Serif",
+        "font1": {
+            "font-family": "Lato",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Droid Serif",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Droid Serif",
+            "font-size": "20px",
+            "font-weight": "inherit",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Droid Serif",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Lato",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch6",
+            "color-hover": "darken(@color-swatch6,30%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "lighten(@color-swatch2,20%)"
+        },
+        "font7": {
+            "font-family": "Lato",
+            "font-size": "20px",
+            "font-weight": "inherit",
+            "line-height": "32px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,10%)"
+        },
+        "font8": {
+            "font-family": "Droid Serif",
+            "font-size": "38px",
+            "font-weight": "400",
+            "line-height": "52px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Droid Serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        }
+    }
+}

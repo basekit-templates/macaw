@@ -1,0 +1,1962 @@
+body {
+  background-color: @color-swatch1;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.canvas  {
+  background-color: darken(@color-swatch1,5%);
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
+
+a {
+  font-family:@font-swatch2-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  color:@color-swatch3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+h1 {
+  font-family:@font-swatch1-font-family;
+  font-weight: @font-swatch1-font-weight;
+  color:@font-swatch1-color;
+  line-height:@font-swatch1-line-height;
+  letter-spacing: @font-swatch1-letter-spacing;
+  font-size: @font-swatch1-font-size;
+}
+
+h2
+{
+  font-family:@font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height:@font-swatch2-line-height;
+  color: @font-swatch2-color;
+  letter-spacing: @font-swatch2-letter-spacing;
+  padding: 5px 10px;
+  background-color: @color-swatch2;
+  display: inline-block;
+}
+
+h3
+{
+  font-family:@font-swatch3-font-family;
+  font-size:@font-swatch3-font-size;
+  font-weight: @font-swatch3-font-weight;
+  color: @font-swatch3-color;
+  line-height:@font-swatch3-line-height;
+  letter-spacing: @font-swatch3-letter-spacing;
+}
+
+h4
+{
+  font-family:@font-swatch4-font-family;
+  font-size:@font-swatch4-font-size;
+  font-weight:@font-swatch4-font-weight;
+  line-height:@font-swatch4-line-height;
+  color:@font-swatch4-color;
+  letter-spacing: @font-swatch4-letter-spacing;
+}
+
+p
+{
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+}
+
+blockquote {
+  background: lighten(@color-swatch5,20%);
+  border-left:6px solid @color-swatch2;
+  margin:0;
+  padding: 14px 16px;
+  quotes:"\201C""\201D""\2018""\2019";
+}
+  blockquote:before {
+  font-family: georgia;
+  color: @color-swatch2;
+  content:open-quote;
+  font-size:4em;
+  line-height:.1em;
+  margin-right:.1em;
+  vertical-align:-.4em;
+}
+  blockquote p {
+  display: inline;
+  font-style: italic;
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+}
+
+  ol {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+}
+
+li, ul {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+}
+
+
+
+/* ===============================
+   CUSTOM CSS
+   =============================== */
+
+.main {
+  padding: 40px 0;
+}
+
+body.edit .widget.navigation, body.edit .widget.extendednavigation {
+ overflow: visible;
+}
+
+/* ===============================
+   PROFILE WIDGET
+   =============================== */
+
+.widget.profile span {
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+  line-height: @font-swatch5-line-height;
+  color: @font-swatch5-color;
+  display: block;
+}
+
+.widget.profile {
+
+}
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+header {
+  padding: 0;
+  background-color: @color-swatch7;
+  border-bottom: 1px  solid lighten(@color-swatch4,40%);
+}
+
+.companyheader {
+  display: block;
+  float: left;
+  padding: 40px 0;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+  display: block;
+  float: left;
+  margin-top: 10px;
+}
+
+.widget.companyname h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* LOGO */
+
+.widget.logo {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+  padding: 4em 0;
+  background-color: @color-swatch2;
+  min-height: 150px;
+  color: @color-swatch1;
+}
+
+footer h2 {
+  color: @color-swatch1;
+  font-size:bkscale(@font-swatch2-font-size, 0.8);
+  padding: 0;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+footer p {
+  font-family: @font-swatch5-font-family;
+  color: lighten(@color-swatch5,10%);
+  line-height:@font-swatch5-line-height;
+  padding-bottom: 20px;
+}
+
+footer span {
+  color: @color-swatch1;
+}
+
+/* ===============================
+   STANDARD NAVIGATION
+   =============================== */
+
+.widget.navigation {
+}
+
+.widget.navigation ul {
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.widget.navigation ul.align-center li
+{
+  text-align: center;
+}
+
+.widget.navigation ul.align-left li
+{
+  text-align: left;
+}
+
+.widget.navigation ul.align-right li
+{
+  text-align: right;
+}
+
+.widget.navigation ul li {
+  float: left;
+  display: block;
+  padding-right: 40px;
+}
+
+.widget.navigation ul li a {
+  display: block;
+  font-family:@font-swatch6-font-family;
+  font-size:@font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  color: @font-swatch6-color;
+  line-height:@font-swatch6-line-height;
+  letter-spacing: @font-swatch6-letter-spacing;
+}
+
+.widget.navigation ul li a:hover {
+  text-decoration: none;
+  color: @color-swatch3;
+}
+
+/* ===============================
+   EXTENDED NAVIGATION
+   =============================== */
+
+.main .widget.extendednavigation {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+}
+
+.main .widget.extendednavigation:before,
+.main .widget.extendednavigation:after {
+  content: " ";
+  display: table;
+}
+.main .widget.extendednavigation:after {
+  clear: both;
+}
+.main .widget.extendednavigation {
+  *zoom: 1;
+}
+
+
+.widget.extendednavigation {
+  float: right;
+  position: relative;
+  max-width: 691px;
+  text-transform: uppercase;
+}
+
+.widget.extendednavigation a.pull {
+  display: none;
+}
+
+.widget.extendednavigation ul {
+  float: left;
+  margin: 0;
+  padding: 30px 0;
+}
+
+/* ALIGNMENTS */
+
+.widget.extendednavigation ul.align-center li, .widget.extendednavigation ul.align-center li:hover ul li {
+  text-align: center;
+}
+
+.widget.extendednavigation ul.align-left li, .widget.extendednavigation ul.align-left li:hover ul li
+{
+  text-align: left;
+}
+
+.widget.extendednavigation ul.align-right li, .widget.extendednavigation ul.align-right li:hover ul li
+{
+  text-align: right;
+}
+
+.widget.extendednavigation ul li {
+  float: left;
+  display: block;
+  text-align: left!important;
+}
+
+.widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+  display: block;
+  padding: 18px 25px;
+  font-family:@font-swatch6-font-family;
+  font-size:@font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  color: lighten(@font-swatch6-color, 50%);
+  line-height:@font-swatch6-line-height;
+  letter-spacing: @font-swatch6-letter-spacing;
+}
+
+.widget.extendednavigation ul li a:hover {
+  text-decoration: none;
+  color: @font-swatch6-color-hover;
+}
+
+/* SELECTED */
+
+.widget.extendednavigation ul li.selected {
+  background-color: @color-swatch3;
+
+}
+
+.widget.extendednavigation ul li.selected:hover { 
+
+}
+
+/* FOLDER */
+
+.widget.extendednavigation ul li.folder {
+  margin-right: 16px;
+  background-image: image('/images/arrow-down.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.widget.extendednavigation ul li.folder .text:hover {
+  color: @font-swatch6-color-hover;
+}
+
+/* DROPDOWN MENU */
+
+.widget.extendednavigation li > ul {
+  display: none;
+}
+
+.widget.extendednavigation li:hover > ul {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: @color-swatch7;
+  border-top: 1px solid lighten(@color-swatch7,8%);
+  z-index: 500;
+  padding: 20px 0;
+}
+
+.widget.extendednavigation li:hover > ul > li {
+  display: block;
+  width: 100%;
+  text-align: left!important;
+  padding: 0 30px 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.widget.extendednavigation li:hover > ul li:first-child {
+}
+
+.widget.extendednavigation li:hover > ul li:hover {
+
+}
+
+.widget.extendednavigation li:hover > ul > li > a {
+  display: block;
+  background-image: none;
+  color: @color-swatch7;
+  padding: 0;
+}
+
+
+.widget.extendednavigation ul li:hover > ul li .text {
+  padding: 0 0 0 16px;
+  background-image: image('/images/arrow-left.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.widget.extendednavigation li:hover > ul > li > a {
+
+}
+
+.widget.extendednavigation li:hover > ul li .text:hover {
+  color: @font-swatch6-color-hover;
+}
+
+/* ===============================
+   FEATURE
+   =============================== */
+
+ .widget.feature {
+  width: 100%;
+  padding: 0;
+}
+
+.widget.feature .feature-bgimg {
+  height: 500px; /* should be in media query*/
+ }
+
+.widget.feature .content {
+  height: 500px;
+  text-align: right;
+}
+
+.widget.feature .content .spare {
+  max-width: 960px;
+  padding: 40px;
+  margin: 0 auto; 
+}
+
+/* FEATURE TITLE */
+
+.widget.feature h2 {
+  display: inline-block;
+  font-family:@font-swatch8-font-family;
+  font-size:@font-swatch8-font-size;
+  font-weight: @font-swatch8-font-weight;
+  line-height:@font-swatch8-line-height;
+  color: @font-swatch8-color;
+  /*letter-spacing: @font-swatch8-letter-spacing;*/
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 10px;
+background-color: transparent;
+}
+
+/* FEATURE STRAPLINE */
+
+.widget.feature h3 {
+  font-family:@font-swatch9-font-family;
+  font-size:@font-swatch9-font-size;
+  font-weight: @font-swatch9-font-weight;
+  line-height:@font-swatch9-line-height;
+  color: lighten(@font-swatch9-color,40%);
+  letter-spacing: 1px;
+  letter-spacing: @font-swatch9-letter-spacing;
+}
+
+/* FEATURE BUTTON */
+
+.widget.feature button
+{
+  margin: 1em 0;
+  padding: 17px 56px;
+  border: 0;
+  font-family: @font-swatch2-font-family;
+  font-size: 1.2em;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @color-swatch1;
+  text-decoration: none;
+      -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.widget.feature button:hover 
+{
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.widget.feature button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.feature button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.feature button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.feature button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.feature button.btn.italic {
+    font-style: italic;
+}
+
+.widget.feature button.btn.bold {
+    font-weight: bold;
+}
+
+.widget.feature button span {
+    vertical-align: center;
+}
+
+.widget.feature button i {
+    margin-right: 5px;
+}
+
+/* ===============================
+   FEATURE LAYOUTS
+   =============================== */
+
+/* LEFT ALIGN */
+
+.widget.feature.align-left .content {
+  width: 100%;
+  text-align: left;
+}
+
+/* CENTER ALIGN */
+
+.widget.feature.align-center .content {
+  width: 100%;
+  text-align: center;
+}
+
+/* RIGHT ALIGN */
+
+.widget.feature.align-right .content {
+  width: 100%;
+  text-align: right;
+}
+
+/* ===============================
+   BUTTON CSS
+   =============================== */
+
+.widget.button {
+    padding: 0;
+}
+
+
+.widget.button button
+{
+  margin: 1em 0;
+  padding: 17px 56px;
+  border: 0;
+  font-family: @font-swatch2-font-family;
+  font-size: 1.2em;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch6-background-color;
+  color: @color-swatch1;
+  text-decoration: none;
+      -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.widget.button button:hover 
+{
+  background-color: @font-swatch6-background-color-hover;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+} 
+
+
+/* JUSTIFY */
+
+.widget.button button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.button button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.button button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.button button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.button button.btn.italic {
+    font-style: italic;
+}
+
+.widget.button button.btn.bold {
+    font-weight: bold;
+}
+
+.widget.button span {
+    vertical-align: center;
+}
+
+.widget.button i {
+    margin-right: 5px;
+}
+
+/* ===============================
+   CONTENT CSS
+   =============================== */
+
+
+.widget.content
+{
+    padding: 0;
+    overflow: hidden;
+}
+
+.widget.content span.expand
+{
+    font-family: @font-swatch3-font-family;
+    background-color: @color-swatch3;
+    color: @font-swatch7-color;
+    font-size: @font-swatch5-font-size;
+    padding: 4px 8px;
+    margin: 4px 0;
+    /*-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;*/
+    cursor: pointer;
+    display: inline-block;
+}
+
+.widget.content span.expand:hover,
+.widget.content span.expand:focus
+{
+    cursor: pointer;
+    background-color: darken(@color-swatch3,5%);
+}
+
+@media only screen and (min-width: 768px) {
+    .widget.content .bk-content-text {
+        overflow: visible!important;
+        height: auto!important;
+    }
+    .widget.content span.expand {
+        display:none!important;
+    }
+}
+
+/* ===============================
+   IMAGE WIDGET
+   =============================== */
+
+.widget.image img
+{
+    display:block;
+    max-width: 100%;
+}
+
+.widget.image {
+}
+
+.widget.image span.image-title {
+    display: block;
+    margin:5px;
+    font-family: @font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    font-size: @font-swatch4-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: @font-swatch4-line-height;
+}
+
+.widget.image span.image-description {
+    display: block;
+    margin:5px;
+    text-align: center;
+    font-family: @font-swatch5-font-family;
+    font-weight: @font-swatch5-font-weight;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
+}
+
+/* ===============================
+   GALLERY WIDGET
+   =============================== */
+
+
+.widget.gallery
+{
+}
+
+.widget.gallery ul {
+    display:block;
+    margin: 0;
+    padding:0px;
+    list-style: none;
+}
+
+.widget.gallery li {
+    float: left;
+    position: relative;
+    width: 33.3%;
+    padding-bottom: 33%;
+}
+
+.widget.gallery li  span.inner {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-color: @color-swatch1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.widget.gallery ul li.one-to-one span.inner
+{
+    background-size:100% 100%;
+}
+
+.widget.gallery ul li.portrait span.inner
+{
+    background-size:100% auto;
+}
+
+.widget.gallery ul li.landscape span.inner
+{
+    background-size:auto 100%;
+}
+
+.widget.gallery li span.inner {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    bottom: 16px;
+    overflow: hidden;
+}
+
+.widget.gallery li span.inner img {
+    display:none;
+}
+
+.widget.gallery ul:before,
+.widget.gallery ul:after {
+  content: " ";
+  display: table;
+}
+.widget.gallery ul:after {
+  clear: both;
+}
+.widget.gallery ul {
+  *zoom: 1;
+}
+
+.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -50px;
+    background:@color-swatch1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:@font-swatch5-line-height;
+    color:@font-swatch5-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+.widget.gallery li span.inner:hover .title {
+   margin-bottom: 0;
+}
+
+.widget.gallery li span.inner .description {
+  display: none;
+}
+
+.widget.gallery li span.inner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* ===============================
+   DIVIDER WIDGET
+   =============================== */
+
+.widget.line {
+    padding: 20px 0;
+}
+
+hr.line {
+   background-color: lighten(@color-swatch5,18%);
+   height: 1px;
+   width: 100%;
+   border: none;
+}
+
+hr.line.align-left {
+   margin: 20px auto 20px 0px;
+}
+
+hr.line.align-center {
+   margin: 20px auto;
+}
+
+hr.line.align-right {
+   margin: 20px 0px 20px auto;
+}
+
+
+/* ===============================
+   CLICK TO CALL WIDGET
+   =============================== */
+
+.widget.clicktocall {
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+
+.widget.clicktocall a
+{
+  margin: 1em 0;
+  padding: 17px 35px 17px 56px;
+  border: 0;
+  background-image: image('/images/ic-desktop-call-mob.png');
+  background-position: 25px center;
+  background-repeat: no-repeat;
+  font-family: @font-swatch2-font-family;
+  font-size: 1.2em;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch6-background-color;
+  color: @color-swatch1;
+  text-decoration: none;
+      -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.widget.clicktocall a:hover 
+{
+  background-color: @font-swatch6-background-color-hover;
+  cursor: pointer;
+    padding: 17px 35px 17px 56px;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+} 
+
+.widget.clicktocall a.justifyleft
+{
+    text-align: left;
+}
+
+.widget.clicktocall a.justifycenter
+{
+    text-align: center;
+}
+
+.widget.clicktocall a.justifyright
+{
+    text-align: right;
+}
+
+.widget.clicktocall a.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.clicktocall a.italic {
+    font-style: italic;
+}
+
+.widget.clicktocall a.bold {
+    font-weight: bold;
+}
+
+/* ===============================
+   REDIRECT WIDGET
+   =============================== */
+
+.widget.redirecttodesktop {
+    padding: 8px 0;
+}
+
+.widget.redirecttodesktop a {
+    padding-right: 30px;
+    padding-top: 2px;
+    background-image: image('/images/desktop.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 12px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    text-decoration: none;
+    cursor: pointer;
+    color: @font-swatch5-color;
+    font-family: @font-swatch5-font-family;
+
+}
+
+.widget.redirecttodesktop a:hover, .desktop a:active {
+    background-image: image('/images/desktop.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ===============================
+   TWITTER WIDGET
+   =============================== */
+
+
+.widget.twitter {
+  margin: 20px 0;
+}
+
+.widget.twitter p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin-top: 20px;
+}
+
+.widget.twitter a {
+   color: @font-swatch5-color;
+   text-decoration: none;
+   padding-bottom: 4px;
+}
+
+.widget.twitter span a {
+  border-bottom: 0;
+  font-size: .6em;
+  color: @color-swatch3;
+}
+
+.widget.twitter a:hover {
+
+}
+
+.widget.twitter ul {
+    padding: 0px;
+    margin: 0;
+}
+
+.widget.twitter ul li {
+    border-bottom: none;
+    list-style: none;
+    font-family: @font-swatch5-font-family;
+    font-size: .6em;
+    color: @font-swatch5-color;
+    padding-bottom: 30px;
+}
+
+.widget.twitter ul li:last-child {
+    padding-bottom: 0px;
+}
+
+.widget.twitter .twitter-profile-pic {
+    float: left;
+    margin-right: 20px;
+    height: 110px;
+}
+
+.widget.twitter .twitter-profile-pic a {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.widget.twitter .twitter-content span.bk-full-name {
+    font-family: @font-swatch4-font-family;
+    color: @color-swatch3;
+}
+
+
+/* ===============================
+   SIGN UP
+   =============================== */
+
+
+.widget.signupform form {
+    display: block;
+    margin: 0 0 20px;
+    background-color: @color-swatch1;
+}
+
+.widget.signupform fieldset {
+    border: none;
+    padding: 0;
+}
+
+.widget.signupform fieldset label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch4-font-family;
+    font-size:font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@color-swatch3;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.signupform fieldset input {
+    height: 40px;
+    width: 50%;
+    background-color: darken(@color-swatch1,5%);
+    border: 1px solid darken(@color-swatch1,10%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 12px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.widget.signupform fieldset textarea {
+    height: 132px;
+    width: 100%;
+    background-color: darken(@color-swatch1,5%);
+    border: 1px solid darken(@color-swatch1,10%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 8px;
+    padding-top: 14px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.widget.signupform fieldset input:focus, .widget.signupform fieldset textarea:focus {
+  outline: none;
+}
+
+/* PLACEHOLDER CSS */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    @color-swatch5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   @color-swatch5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    @color-swatch5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    @color-swatch5;
+}
+
+.widget.signupform fieldset button.btn {
+  padding: 17px 56px;
+  border: 0;
+  font-family: @font-swatch2-font-family;
+  font-size: .9em;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @color-swatch1;
+  text-decoration: none;
+          -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+  
+.widget.signupform fieldset button.btn:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.widget.signupform fieldset button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.signupform fieldset button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.signupform fieldset button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.signupform fieldset button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.signupform fieldset button.btn.italic {
+    font-style: italic;
+}
+
+.widget.signupform fieldset button.btn.bold {
+    font-weight: bold;
+}
+
+/* ===============================
+   CONTACT FORM WIDGET
+   =============================== */
+
+.widget.contactform form {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.widget.contactform fieldset {
+    border: none;
+    padding: 0;
+}
+
+.widget.contactform fieldset label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch4-font-family;
+    font-size:font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@color-swatch3;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.contactform fieldset input {
+    height: 50px;
+    width: 100%;
+    background-color: darken(@color-swatch1,5%);
+    border: 1px solid darken(@color-swatch1,10%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 12px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.widget.contactform fieldset textarea {
+    height: 132px;
+    width: 100%;
+    background-color: darken(@color-swatch1,5%);
+    border: 1px solid darken(@color-swatch1,10%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 8px;
+    padding-top: 14px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
+  outline: none;
+}
+
+/* PLACEHOLDER CSS */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    @color-swatch5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   @color-swatch5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    @color-swatch5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    @color-swatch5;
+}
+
+.widget.contactform fieldset button.btn {
+  padding: 17px 45px;
+  border: 0;
+  font-family: @font-swatch2-font-family;
+  font-size: .9em;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @color-swatch1;
+  text-decoration: none;
+          -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+  
+.widget.contactform fieldset button.btn:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.widget.contactform fieldset button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.contactform fieldset button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.contactform fieldset button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.contactform fieldset button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.contactform fieldset button.btn.italic {
+    font-style: italic;
+}
+
+.widget.contactform fieldset button.btn.bold {
+    font-weight: bold;
+}
+
+
+/* ===============================
+   TWEET THIS WIDGET
+   =============================== */
+
+.widget.tweet {
+   padding: 18px 0; 
+}
+
+.widget.tweet a {
+  padding: 15px 20px 15px 40px;
+  margin: 0;
+  border: none;
+  background-image: image('/images/twitter.png');
+  background-repeat: no-repeat;
+  background-position: 18px;
+
+  font-family: @font-swatch2-font-family;
+  font-size:.9em;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @color-swatch1;
+  text-decoration: none;
+        -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.widget.tweet a:hover, .tweet a:active {
+  padding: 15px 20px 15px 40px;
+  background-image: image('/images/twitter.png');
+  background-repeat: no-repeat;
+  background-position: 18px;
+  cursor: pointer;
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+
+/* ===============================
+   SOCIAL BAR WIDGET
+   =============================== */
+
+.widget.socialicons, .widget.profile .bk-profile-socialicons {
+  padding: 0px;
+  font-family:@font-swatch7-font-family;
+}
+
+.widget.socialicons a, .widget.profile .bk-profile-socialicons a
+{
+  display: inline-block;
+  float: left;
+  margin: 0.5em 0;
+  padding: 11px 18px 11px 41px;
+  border: 0;
+  font-family: @font-swatch2-font-family;
+  font-size: .9em;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @color-swatch3;
+  color: @color-swatch1;
+  text-decoration: none;
+        -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.widget.socialicons a:hover, .widget.profile .bk-profile-socialicons a:hover
+{
+  background-color: darken(@color-swatch3,5%);
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+    display: inline-block;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+.widget.socialicons span.bk-socialicons-twitter a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/socialicons-twitter.png')
+}
+
+.widget.socialicons span.bk-socialicons-linkedin a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+
+    background-image: image('/images/socialicons-linkedin.png');
+}
+
+.widget.socialicons span.bk-socialicons-facebook a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/socialicons-facebook.png');
+}
+
+.widget.socialicons span.bk-socialicons-rss a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/socialicons-rss.png');
+}
+
+.widget.socialicons span.bk-socialicons-googleplus a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/socialicons-googleplus.png');
+}
+
+.widget.socialicons span.bk-socialicons-youtube a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/socialicons-youtube.png');
+}
+
+
+
+
+/* ===============================
+   SLIDESHOW WIDGET
+   =============================== */
+.widget.responsiveslideshow .slideshow-image-list {
+    height: 500px;
+}
+
+.widget.responsiveslideshow .slideshow-widget {
+    background-color: lighten(@color-swatch5,17%);
+}
+.widget.responsiveslideshow span.inner img {
+    width:auto;
+    height:100%;
+}
+
+.widget.responsiveslideshow .image-wrapper {
+    padding:15px;
+}
+
+.widget.responsiveslideshow .crop .image-wrapper {
+    padding:0;
+}
+
+.widget.responsiveslideshow .content-wrapper {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:auto;
+    background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(lighten(@color-swatch4,10%)), 1); 
+}
+
+.widget.responsiveslideshow .title {
+    display: inline-block;
+    padding:5px 20px 0 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .description {
+    display: block;
+    padding: 6px 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, 
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+    font-size: 0;
+    z-index: 11;
+    text-indent: -99999px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  left: 10px;
+  background: image('/images/slideshow-arrow-left.png') no-repeat center left;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  right: 10px;
+  background: image('/images/slideshow-arrow-right.png') no-repeat center right;  
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls {
+  margin-top: 10px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play
+{
+    background: image('/images/slideshow-play.png') center no-repeat;
+    border-radius:10px;
+    font-size:0;
+    text-indent: -99999px;
+}
+
+.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
+{
+    background: image('/images/slideshow-pause.png') center no-repeat;
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot
+{
+    border:none;
+    background:transparent image('/images/slideshow-dot-not-selected.png') center no-repeat;
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot.selected
+{
+    background:transparent image('/images/slideshow-dot-selected.png') center no-repeat;
+}
+
+/* ===============================
+   IPAD WIDTH
+   =============================== */
+
+@media only screen and (max-width: 768px) {
+
+  /* NAV */
+
+  .widget.extendednavigation {
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid lighten(@color-swatch7,8%);
+  }
+
+  .widget .extendednavigation {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  /* NAV ICON */
+
+  .widget .extendednavigation a.pull {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -42px;
+  }
+
+    .widget .extendednavigation a.pull:after {
+    content:"";
+    background: image('/images/nav-icon.png') no-repeat;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: -50px;
+  }
+
+  /* NAV */
+
+  .widget .extendednavigation ul {
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .widget .extendednavigation li {
+    width: 100%;
+    padding: 0;
+  }
+
+  .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+    padding: 12px 0;
+  }
+
+  .widget.extendednavigation ul li .text, .widget.extendednavigation ul li.folder .text {
+    padding-left: 20px;
+    background-image: image('/images/arrow-left.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  .widget.extendednavigation ul li > ul {
+    display: none!important;
+  }
+
+  .widget.extendednavigation ul li:hover > ul {
+    display: block!important;
+    width: 100%;
+  }
+
+  .widget.extendednavigation ul li:hover > ul li {
+    padding: 10px 30px;
+  }
+
+  .widget.extendednavigation ul li:hover > ul li .text, .widget.extendednavigation ul li:hover > ul li.folder .text {
+
+    background-image: image('/images/arrow-left-wh.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  /* FEATURE */
+
+
+  .widget.feature {
+    padding: 0;
+  }
+
+  .widget.feature h2 {
+    font-size: bkscale(@font-swatch8-font-size,0.8);
+  }
+
+  .widget.feature h3 {
+    font-size: bkscale(@font-swatch9-font-size,0.8);
+  }
+
+   .widget.feature .feature-bgimg {
+    height: 320px;
+   }
+
+  .widget.feature .content {
+    height: 320px;
+  }
+
+  .widget.responsiveslideshow .slideshow-image-list {
+    height:200px;
+  }
+
+  .widget.gallery ul.gallery-widget li {
+      width: 50%;
+      padding-bottom: 50%;
+  }
+
+  .widget.feature button
+{
+  padding: 14px 26px;
+  font-size: 1em;
+}
+
+/* SLIDESHOW */
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  background-size: contain;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  background-size: contain;
+}
+
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .widget.gallery li {
+      width: 50%;
+      /*padding-bottom: 50%;*/
+   }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .widget.gallery li {
+      width: 33.3%;
+      /*padding-bottom: 33.3%;*/
+   }
+}
+
+/* ===============================
+   IPHONE WIDTH
+   =============================== */
+
+@media only screen and (max-width: 480px) {
+
+  /* COMPANY HEADER */
+
+  .widget.companyheader .company-name h1 {
+    font-size:bkscale(@font-swatch1-font-size, 0.8)
+  }
+
+
+  /* UL ALIGN RIGHT */
+
+  .widget.extendednavigation ul.align-right li.folder {
+    background-position: 12px center;
+    padding-right: 0;
+  }
+
+  /* FEATURE */
+
+  .widget.feature {
+    padding: 0;
+  }
+
+  .widget.feature .content {
+    text-align: center;
+  }
+
+    .widget.feature h2 {
+    font-size: bkscale(@font-swatch8-font-size,0.6);
+    background-color: @color-swatch1;
+    padding: 10px;
+    line-height: 28px;
+  }
+
+  .widget.feature h3 {
+    display: none;
+  }
+
+.widget.feature button {
+    padding: 10px 36px;
+    font-size: 1em;
+  }
+  .widget.feature .feature-bgimg {
+    height: 220px; /* should be in media query*/
+   }
+
+  .widget.feature .content {
+    height: 220px;
+  }
+
+  .widget.feature .content .spare {
+    padding: 20px;
+  }
+
+  .widget.feature h2 {
+    margin-bottom: 20px;
+  }
+
+
+  /* SLIDESHOW */
+  .widget.responsiveslideshow .title {
+    padding-bottom:7px;
+  }
+
+  .widget.responsiveslideshow .description {
+    display:none;
+  }
+
+ /* SIGN UP */
+
+
+
+ .widget.signupform fieldset button.btn {
+  padding: 12px 26px;
+  border: 0;
+  font-family: @font-swatch2-font-family;
+  font-size: .9em;
+}
+  
+.widget.signupform fieldset button.btn:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+
+  /* CLICK TO CALL */
+
+  .widget.clicktocall a {
+    background-image: image('/images/ic-desktop-call-mob.png');
+    background-color: @font-swatch7-background-color;
+    background-position: 15px;
+    background-repeat:no-repeat;
+    padding: 10px 17px 10px 38px;
+    border: 0;
+    margin: 20px 0;
+    letter-spacing: 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    font-family: @font-swatch2-font-family;
+    font-size:1em;
+    font-weight:@font-swatch7-font-weight;
+    color: @color-swatch1;
+    text-decoration: none;
+  }
+  
+  .widget.clicktocall a:hover {
+    background-image: image('/images/ic-desktop-call-mob.png');
+    background-color: @font-swatch7-background-color-hover;
+    background-position: 15px;
+    color: @color-swatch1;
+    padding: 10px 17px 10px 38px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .widget.clicktocall a.justifyleft {
+    text-align: left;
+  }
+
+  .widget.clicktocall a.justifycenter {
+    text-align: center;
+  }
+
+  .widget.clicktocall a.justifyright {
+    text-align: right;
+  }
+
+  .widget.clicktocall a.justifyfull {
+    text-align: justify;
+  }
+
+  .widget.clicktocall a.italic { 
+    font-style: italic;
+  }
+
+  .widget.clicktocall a.bold {
+    font-weight: bold;
+  }
+
+  .widget.clicktocall {
+    padding: 20px 0;
+    display:block;
+  }
+
+  /* GALLERY */
+
+  .widget.gallery p
+  {
+    padding: 10px;
+  }
+
+  /* Smartphone view: 1 tile */
+  .widget.gallery li {
+      width: 100%;
+      padding-bottom: 100%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 960px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+#featuregallery .widget.gallery  .gallery-widget {
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+
+#featuregallery .widget.gallery ul {
+    background-color:transparent;
+}
+
+#featuregallery .widget.gallery .gallery-widget li {
+  display: block;
+  float: left;
+  width: 31.3%;
+    padding:1%;
+  opacity: 0;
+}
+
+#featuregallery .widget.gallery .title,
+#featuregallery .widget.gallery .description {
+    display:none;
+}
+
+#featuregallery .widget.gallery li span.inner {
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    overflow:visible;
+    background:none!important;
+}
+
+#featuregallery .widget.gallery li span.inner img  {
+    display:inline;
+}
+
+#featuregallery .widget.gallery .gallery-widget li.shown,
+.no-js #featuregallery .widget.gallery  .gallery-widget li,
+.no-cssanimations #featuregallery .gallery-widget li {
+  opacity: 1;
+}
+
+#featuregallery .widget.gallery .gallery-widget li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+
+/* Effect 2: Move Up */
+#featuregallery .widget.gallery  .gallery-widget li.animate {
+  -webkit-transform: translateY(200px);
+  -moz-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  -moz-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+  to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveUp {
+  to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media screen and (max-width: 900px) {
+  #featuregallery .widget.gallery  .gallery-widget li {
+    width: 47.5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #featuregallery .widget.gallery .gallery-widget li {
+    width: 96%;
+  }
+}
+
+/* Animation for isotope moves */
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
