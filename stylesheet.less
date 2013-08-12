@@ -160,6 +160,133 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 }
 
+/* ===============================
+   LATEST TWEET IN FOOTER 
+   =============================== */
+
+.widget.profile .twitter a {
+   color: @color-swatch4;
+   font-size:@font-swatch5-font-size;
+   text-decoration: none;
+}
+
+.widget.profile .twitter a:hover {
+    text-decoration: underline;
+}
+
+.widget.profile .twitter {
+    padding: 0;
+    margin: 0;
+}
+
+.widget.profile .twitter li {
+    border-bottom: none;
+    list-style: none;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    padding: 0;
+    border-bottom: none;
+}
+
+.widget.profile .twitter .twitter-profile-pic {
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+}
+
+.widget.profile .twitter a img {
+  border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius:  30px;
+    border-radius: 30px;
+}
+
+.widget.profile .twitter .twitter-content span.bk-full-name {
+    font-family: @font-swatch5-font-family;
+    color: @color-swatch1;
+    font-weight: bold;
+}
+
+.widget.profile .twitter .twitter-content a:hover {
+  text-decoration: underline;
+  color: @color-swatch1;
+}
+
+.widget.profile .twitter time, .widget.profile .twitter span, .widget.profile .twitter span a {
+color: @color-swatch1;
+}
+
+footer .widget.profile .twitter span {
+  display: inline;
+}
+
+
+/* ===============================
+   SINGLE EMAIL FORM IN FOOTER
+   =============================== */
+
+
+
+.widget.profile fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget.profile fieldset label {
+    width: 100%;
+    float: left;
+    font-family: @font-swatch5-font-family;
+    color: lighten(@color-swatch5,10%);
+    line-height:@font-swatch5-line-height;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.profile fieldset input {
+    height: 40px;
+    width: 73%;
+    background-image:image('/images/ricepaper2.png');
+    border: 2px solid @color-swatch5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 8px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    padding: 0;
+    float:left;
+}
+
+.widget.profile fieldset button.btn {
+    width: 24%;
+    height: 40px;
+    float:right;
+    padding: 1px;
+    margin-top: 6px;
+    border: 1px solid darken(@color-swatch3,5%);
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: none;
+}
+
+.widget.profile fieldset button.btn:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+}
 
 /* ===============================
    HEADER
@@ -434,6 +561,27 @@ footer span {
 
 .widget.extendednavigation li:hover > ul li .text:hover {
   color: @font-swatch6-color-hover;
+}
+
+
+/* EXTENDED NAVIGATION - INSIDE ZONE */
+
+.main .widget.extendednavigation {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+}
+
+.main .widget.extendednavigation:before,
+.main .widget.extendednavigation:after {
+  content: " ";
+  display: table;
+}
+.main .widget.extendednavigation:after {
+  clear: both;
+}
+.main .widget.extendednavigation {
+  *zoom: 1;
 }
 
 /* ===============================
@@ -1062,7 +1210,7 @@ hr.line.align-right {
 
 .widget.signupform fieldset input {
     height: 40px;
-    width: 50%;
+    width: 63%;
     background-color: darken(@color-swatch1,5%);
     border: 1px solid darken(@color-swatch1,10%);
     font-family: @font-swatch5-font-family;
@@ -1087,7 +1235,7 @@ hr.line.align-right {
     text-indent: 8px;
     padding-top: 14px;
     margin-top: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     resize: none;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -1291,6 +1439,18 @@ hr.line.align-right {
 
 .widget.contactform fieldset button.btn.bold {
     font-weight: bold;
+}
+
+/* ===============================
+   PROFILE WIDGET
+   =============================== */
+
+.widget.profile span {
+  display: block;
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+  line-height: @font-swatch5-line-height;
+  color: @font-swatch5-color;
 }
 
 
