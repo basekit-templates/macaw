@@ -9,14 +9,6 @@ body {
   margin: 0 5%;
 }
 
-.canvas  {
-  background-color: darken(@color-swatch1,5%);
-  max-width: 1080px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 0 60px;
-}
-
 a {
   font-family:@font-swatch2-font-family;
   font-size:@font-swatch5-font-size;
@@ -190,10 +182,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget.profile .twitter .twitter-profile-pic {
-    float: left;
-    margin-right: 20px;
-    height: 120px;
-}
+    display: none;
 
 .widget.profile .twitter a img {
   border-radius: 30px;
@@ -214,7 +203,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget.profile .twitter time, .widget.profile .twitter span, .widget.profile .twitter span a {
-color: @color-swatch1;
+  darken(color: @color-swatch1,20%);
 }
 
 footer .widget.profile .twitter span {
@@ -257,7 +246,7 @@ footer .widget.profile .twitter span {
 }
 
 .widget.profile fieldset button.btn {
-    width: 24%;
+    width: 15%;
     height: 40px;
     float:right;
     padding: 1px;
@@ -267,7 +256,7 @@ footer .widget.profile .twitter span {
        -moz-border-radius: 30px;
             border-radius: 30px;
     font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-font-size;
+    font-size: 16px;
     font-weight:@font-swatch7-font-weight;
     background-color: @font-swatch7-background-color;
     color: @font-swatch7-color;
@@ -295,6 +284,20 @@ header {
   display: block;
   float: left;
   padding: 40px 0;
+}
+
+.companyname a {
+  text-decoration: none;
+  font-family:@font-swatch10-font-family;
+  font-weight: @font-swatch10-font-weight;
+  color:@font-swatch10-color;
+  line-height:@font-swatch10-line-height;
+  letter-spacing: @font-swatch10-letter-spacing;
+  font-size: @font-swatch10-font-size;
+}
+
+.companyname a:hover {
+  text-decoration: none;
 }
 
 /* COMPANY NAME */
@@ -615,7 +618,9 @@ footer span {
   text-transform: uppercase;
   padding: 0;
   margin-bottom: 10px;
-background-color: transparent;
+  background-color: transparent;
+  max-width: 450px;
+  margin: 0 0 0 auto;
 }
 
 /* FEATURE STRAPLINE */
@@ -628,6 +633,8 @@ background-color: transparent;
   color: lighten(@font-swatch9-color,40%);
   letter-spacing: 1px;
   letter-spacing: @font-swatch9-letter-spacing;
+  max-width: 450px;
+  margin: 0 0 0 auto;
 }
 
 /* FEATURE BUTTON */
@@ -1120,7 +1127,6 @@ hr.line.align-right {
 .widget.twitter p {
   font-size: 1.5em;
   line-height: 1.6em;
-  margin-top: 20px;
 }
 
 .widget.twitter a {
@@ -1828,7 +1834,6 @@ hr.line.align-right {
   .widget.companyheader .company-name h1 {
     font-size:bkscale(@font-swatch1-font-size, 0.8)
   }
-
 
   /* UL ALIGN RIGHT */
 
