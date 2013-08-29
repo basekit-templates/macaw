@@ -94,7 +94,7 @@ blockquote {
   margin-right:.1em;
   vertical-align:-.4em;
 }
-  blockquote p {
+  blockquote p, ol, li, ul {
   display: inline;
   font-style: italic;
   font-family:@font-swatch5-font-family;
@@ -102,24 +102,6 @@ blockquote {
   font-weight:@font-swatch5-font-weight;
   line-height:@font-swatch5-line-height;
   color:@font-swatch5-color;
-}
-
-  ol {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
-
-li, ul {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
 }
 
 
@@ -1498,82 +1480,113 @@ hr.line.align-right {
 }
 
 
-/* ===============================
-   SOCIAL BAR WIDGET
+/* ==================================
+   SOCIAL BAR WIDGET / SOCIAL PROFILE
    =============================== */
 
-.widget.socialicons, .widget.profile .bk-profile-socialicons {
-  padding: 0px;
-  font-family:@font-swatch7-font-family;
+.widget.socialicons,
+.widget.profile .bk-profile-socialicons {
+    padding: 10px 0;
+    font-size: 1em;
+    font-family: @font-swatch7-font-family;
 }
 
-.widget.socialicons a, .widget.profile .bk-profile-socialicons a
-{
-  display: inline-block;
-  float: left;
-  margin: 0.5em 0;
-  padding: 6px 18px 6px 41px;
-  border: 0;
-  font-family: @font-swatch2-font-family;
-  font-size: .9em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @color-swatch3;
-  color: @color-swatch1;
-  text-decoration: none;
-        -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
-
-.widget.socialicons a:hover, .widget.profile .bk-profile-socialicons a:hover
-{
-  background-color: darken(@color-swatch3,5%);
-  cursor: pointer;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-}
-
-
-.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+.widget.profile .bk-profile-socialicons span {
     display: inline-block;
-    margin-right: 8px;
+}
+
+.widget.socialicons span a,
+.widget.profile .bk-profile-socialicons span a {
+    background-color: @font-swatch7-background-color;
     background-repeat: no-repeat;
-    background-position: 16px center;
+    background-position: center;
+    background-size: 18px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 0 0 3px rgba(110,110,110,0.1);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-indent: -9999px;
 }
 
-.widget.socialicons span.bk-socialicons-twitter a, 
+.widget.profile .bk-profile-socialicons span a {
+    box-shadow: 0 0 0 3px rgba(110,110,110,0.4);
+    margin-right: 10px;
+}
+
+.widget.socialicons span a:hover,
+.widget.profile .bk-profile-socialicons span a:hover {
+    background-color: @font-swatch7-background-color-hover
+}
+
+/* SVG ICONS */
+
+.svg .widget.socialicons span.bk-socialicons-twitter a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/social/socialicons-twitter.svg');
+}
+
+.svg .widget.socialicons span.bk-socialicons-linkedin a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/social/socialicons-linkedin.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-facebook a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/social/socialicons-facebook.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-rss a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/social/socialicons-rss.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-googleplus a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/social/socialicons-googleplus.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-youtube a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/social/socialicons-youtube.svg')
+}
+
+/* PNG ICONS */
+
+.widget.socialicons span.bk-socialicons-twitter a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
-    background-image: image('/images/socialicons-twitter.png')
+    background-image: image('/images/social/socialicons-twitter.png');
 }
 
-.widget.socialicons span.bk-socialicons-linkedin a, 
+.widget.socialicons span.bk-socialicons-linkedin a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-
-    background-image: image('/images/socialicons-linkedin.png');
+    background-image: image('/images/social/socialicons-linkedin.png')
 }
 
 .widget.socialicons span.bk-socialicons-facebook a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/socialicons-facebook.png');
+    background-image: image('/images/social/socialicons-facebook.png')
 }
 
 .widget.socialicons span.bk-socialicons-rss a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/socialicons-rss.png');
+    background-image: image('/images/social/socialicons-rss.png')
 }
 
 .widget.socialicons span.bk-socialicons-googleplus a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-    background-image: image('/images/socialicons-googleplus.png');
+    background-image: image('/images/social/socialicons-googleplus.png')
 }
 
 .widget.socialicons span.bk-socialicons-youtube a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/socialicons-youtube.png');
+    background-image: image('/images/social/socialicons-youtube.png')
 }
-
 
 
 
