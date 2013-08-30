@@ -1034,72 +1034,35 @@ hr.line.align-right {
 }
 
 
-/* ===============================
-   CLICK TO CALL WIDGET
-   =============================== */
+/* =======================================
+   CLICK TO CALL
+   ==================================== */
 
 .widget.clicktocall {
-    padding: 10px 0;
-    margin: 20px 0;
+    padding: 8px 0
 }
 
-
-.widget.clicktocall a
-{
-  margin: 1em 0;
-  padding: 17px 35px 17px 56px;
-  border: 0;
-  background-image: image('/images/ic-desktop-call-mob.png');
-  background-position: 25px center;
-  background-repeat: no-repeat;
-  font-family: @font-swatch2-font-family;
-  font-size: 1.2em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch6-background-color;
-  color: @color-swatch1;
-  text-decoration: none;
-      -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+.widget.clicktocall a {
+    background-image: image('/images/ic-call-desktop.svg');
+    background-size: 7px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 18px;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+    text-decoration: none;
 }
 
-.widget.clicktocall a:hover 
-{
-  background-color: @font-swatch6-background-color-hover;
-  cursor: pointer;
-    padding: 17px 35px 17px 56px;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-} 
-
-.widget.clicktocall a.justifyleft
-{
-    text-align: left;
+.widget.clicktocall a:hover {
+    cursor: pointer;
 }
 
-.widget.clicktocall a.justifycenter
-{
-    text-align: center;
-}
-
-.widget.clicktocall a.justifyright
-{
-    text-align: right;
-}
-
-.widget.clicktocall a.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.clicktocall a.italic {
-    font-style: italic;
-}
-
-.widget.clicktocall a.bold {
-    font-weight: bold;
+.widget.clicktocall a:active {
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
 }
 
 /* ===============================
@@ -1969,66 +1932,41 @@ hr.line.align-right {
 }
 
 
-  /* CLICK TO CALL */
+    /* CLICK TO CALL */
 
-  .widget.clicktocall a {
-    background-image: image('/images/ic-desktop-call-mob.png');
-    background-color: @font-swatch7-background-color;
-    background-position: 15px;
-    background-repeat:no-repeat;
-    padding: 10px 17px 10px 38px;
-    border: 0;
-    margin: 20px 0;
-    letter-spacing: 0;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    .widget.clicktocall a {
+        background-image: image('/images/ic-call.svg');
+        background-size: 7px;
+        background-position: 14px center;
+        background-repeat: no-repeat;
+        background-color: @font-swatch7-background-color;
 
-    font-family: @font-swatch2-font-family;
-    font-size:1em;
-    font-weight:@font-swatch7-font-weight;
-    color: @color-swatch1;
-    text-decoration: none;
-  }
-  
-  .widget.clicktocall a:hover {
-    background-image: image('/images/ic-desktop-call-mob.png');
-    background-color: @font-swatch7-background-color-hover;
-    background-position: 15px;
-    color: @color-swatch1;
-    padding: 10px 17px 10px 38px;
-    cursor: pointer;
-    text-decoration: none;
-  }
+        font-family: @font-swatch7-font-family;
+        font-size: .75em;
+        font-weight: @font-swatch7-font-weight;
+        line-height: @font-swatch7-line-height;
+        color: @font-swatch7-color;
+        letter-spacing: @font-swatch7-letter-spacing;
+        background-color: @font-swatch7-background-color;
+        padding: 12px 12px 12px 34px;
+        border: 1px solid darken(@color-swatch3,5%);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+    }
 
-  .widget.clicktocall a.justifyleft {
-    text-align: left;
-  }
+    .widget.clicktocall a:hover {
+        background-color: @font-swatch7-background-color-hover;
+        cursor: pointer;
+    }
 
-  .widget.clicktocall a.justifycenter {
-    text-align: center;
-  }
-
-  .widget.clicktocall a.justifyright {
-    text-align: right;
-  }
-
-  .widget.clicktocall a.justifyfull {
-    text-align: justify;
-  }
-
-  .widget.clicktocall a.italic { 
-    font-style: italic;
-  }
-
-  .widget.clicktocall a.bold {
-    font-weight: bold;
-  }
-
-  .widget.clicktocall {
-    padding: 20px 0;
-    display:block;
-  }
+    .widget.clicktocall a:active {
+        box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
+    }
 
   /* GALLERY */
 
