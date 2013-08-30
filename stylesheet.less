@@ -96,7 +96,6 @@ blockquote {
 }
   blockquote p, ol, li, ul {
   display: inline;
-  font-style: italic;
   font-family:@font-swatch5-font-family;
   font-size:@font-swatch5-font-size;
   font-weight:@font-swatch5-font-weight;
@@ -1550,7 +1549,8 @@ hr.line.align-right {
     -moz-border-radius: 30px;
     border-radius: 30px;
     text-decoration: none;
-    text-indent: -9999px;
+    text-indent: 99999px;
+    white-space: nowrap;
 }
 
 .widget.profile .bk-profile-socialicons span a {

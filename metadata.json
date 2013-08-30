@@ -133,7 +133,7 @@
             "font-family": "Droid Serif",
             "font-size": "18px",
             "font-weight": "400",
-            "line-height": "16px",
+            "line-height": "21px",
             "color": "@color-swatch2",
             "letter-spacing": "inherit"
         }
