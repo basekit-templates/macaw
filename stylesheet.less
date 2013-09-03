@@ -79,11 +79,13 @@ p
 }
 
 blockquote {
-  background: lighten(@color-swatch5,20%);
-  border-left:6px solid @color-swatch2;
-  margin:0;
-  padding: 14px 16px;
-  quotes:"\201C""\201D""\2018""\2019";
+    margin: 30px 0;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: darken(@font-swatch5-color,10%);
 }
   blockquote:before {
   font-family: georgia;
@@ -95,7 +97,6 @@ blockquote {
   vertical-align:-.4em;
 }
   blockquote p, ol, li, ul {
-  display: inline;
   font-family:@font-swatch5-font-family;
   font-size:@font-swatch5-font-size;
   font-weight:@font-swatch5-font-weight;
@@ -228,15 +229,11 @@ footer .widget.profile .twitter span {
 }
 
 .widget.profile fieldset button.btn {
-    width: 15%;
-    height: 40px;
-    float:right;
+    width: 25%;
+    height: 44px;
     padding: 1px;
     margin-top: 6px;
     border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
     font-family: @font-swatch7-font-family;
     font-size: 16px;
     font-weight:@font-swatch7-font-weight;
