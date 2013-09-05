@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="//{{env.assetDomain}}/templates/common/responsive-columns.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>
+<script>
 		$(function() {
 			var pull 		= $('.pull');
 				menu 		= $('.extendednavigation ul');
@@ -39,12 +39,16 @@
 				menu.slideToggle();
 			});
 
-			$(window).resize(function(){
+            function menuToggle() {
         		var w = $(window).width();
+
         		if(w > 320 && menu.is(':hidden')) {
         			menu.removeAttr('style');
         		}
-    		});
+            }
+
+			$(window).bind('resize', menuToggle);
+            $(window).bind('orientationchange', menuToggle);
 		});
 	</script>
 
