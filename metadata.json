@@ -2,6 +2,11 @@
     "name":"Macaw",
     "thumbnail":"macaw.png",
     "screenshot":"macaw.png",
+    "tags": {
+        "en": ["minimal", "clean", "photography", "modern", "colorful", "colourful"],
+        "es": ["minimalista", "limpio", "fotografico", "moderno", "colorido"],
+        "br": ["minimalista", "limpo", "fotografia", "moderno", "colorido"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
