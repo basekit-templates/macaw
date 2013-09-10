@@ -27,8 +27,14 @@
 
 	<link rel="stylesheet" href="//{{env.assetDomain}}/templates/common/responsive-columns.css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>
+	{% include basekit.headScript %}
+</head>
+<body class="{{ page.backgroundClass }}">
+
+	{% block content %}
+	{% endblock %}
+
+	<script>
 		$(function() {
 			var pull 		= $('.pull');
 				menu 		= $('.extendednavigation ul');
@@ -51,13 +57,6 @@
             $(window).bind('orientationchange', menuToggle);
 		});
 	</script>
-
-	{% include basekit.headScript %}
-</head>
-<body class="{{ page.backgroundClass }}">
-
-	{% block content %}
-	{% endblock %}
 
 	{% include basekit.bodyScript %}
 </body>

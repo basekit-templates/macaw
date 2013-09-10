@@ -3,9 +3,9 @@
     "thumbnail":"macaw.png",
     "screenshot":"macaw.png",
     "tags": {
-        "en": ["minimal", "clean", "photography", "modern", "colorful", "colourful"],
-        "es": ["minimalista", "limpio", "fotografico", "moderno", "colorido"],
-        "br": ["minimalista", "limpo", "fotografia", "moderno", "colorido"]
+        "en": ["minimal", "clean", "photography", "modern", "colorful", "colourful", "company", "business", "independent", "art", "portfolio", "animal", "university", "open", "simple"],
+        "es": ["minimalista", "limpio", "fotografico", "moderno", "colorido", "empresa", "negocios", "independiente", "arte", "portafolio", "fauna", "universidad", "abierto", "simple"],
+        "br": ["minimalista", "limpo", "fotografia", "moderno", "colorido", "empresa", "negócios", "independente", "arte", "portfolio", "fauna", "universidade", "aberto", "simples"]
     },
     "colorSwatches":
     {
