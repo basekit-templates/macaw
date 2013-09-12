@@ -42,7 +42,12 @@
 
 			$(pull).on('click', function(e) {
 				e.preventDefault();
-				menu.slideToggle();
+				if (menu.is(':visible')) {
+					menu.hide();	
+				} else {
+					menu.show();
+				}
+
 			});
 
             function menuToggle() {
