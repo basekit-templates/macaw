@@ -971,7 +971,8 @@ footer span {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    margin-bottom: -50px;
+    margin-bottom: -310px;
+    max-height: 284px;
     background:@color-swatch1;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -984,7 +985,7 @@ footer span {
     font-size:@font-swatch5-font-size;
     font-weight: @font-swatch5-font-weight;
     line-height:@font-swatch5-line-height;
-    color:@font-swatch5-color;
+    color:@color-swatch1;
     letter-spacing: @font-swatch5-letter-spacing;
 }
 .widget.gallery li span.inner:hover .title {
@@ -1001,6 +1002,20 @@ footer span {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+/* Lightbox */
+
+.lb-data .lb-caption, .lb-data .lb-number {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:lighten(@font-swatch5-color,50%);
+}
+
+.lb-data .lb-number {
+  font-size:bkscale(@font-swatch5-font-size,0.9);
 }
 
 
@@ -1811,6 +1826,13 @@ hr.line.align-right {
   font-size: 1em;
 }
 
+ /* GALLERY */
+
+.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+font-size:bkscale(@font-swatch5-font-size,0.9);
+line-height:bkscale(@font-swatch5-line-height,0.9);
+}
+
 /* SLIDESHOW */
 
 .widget.responsiveslideshow .slideshow-widget .btn-prev {
@@ -1899,6 +1921,11 @@ hr.line.align-right {
     margin-bottom: 20px;
   }
 
+   /* GALLERY */
+
+.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+max-height: 150px;
+}
 
   /* SLIDESHOW */
   .widget.responsiveslideshow .title {
