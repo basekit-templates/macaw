@@ -34,35 +34,6 @@
 	{% block content %}
 	{% endblock %}
 
-	<script>
-		$(function() {
-			var pull 		= $('.pull');
-				menu 		= $('.extendednavigation ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				if (menu.is(':visible')) {
-					menu.hide();	
-				} else {
-					menu.show();
-				}
-
-			});
-
-            function menuToggle() {
-        		var w = $(window).width();
-
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-            }
-
-			$(window).bind('resize', menuToggle);
-            $(window).bind('orientationchange', menuToggle);
-		});
-	</script>
-
 	{% include basekit.bodyScript %}
 </body>
 </html>
