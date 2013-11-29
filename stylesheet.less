@@ -1,14 +1,5 @@
-/* ===============================
-   IMPORT CSS
-   =============================== */
-
-@import templatecommon('/paypal.less');
-@import templatecommon('/dropbox.less');
-
-
-/* ===============================
-   TEMPLATE STYLES
-   =============================== */
+@import "@{templateCommon}/paypal.less";
+@import "@{templateCommon}/dropbox.less";
 
 body {
   background-color: @color-swatch1;
@@ -766,23 +757,6 @@ footer span {
   }
 
 /* ===============================
-   DROPBOX WIDGET
-   =============================== */
-
-
-.widget.dropbox .b-wrap .btn {
-  padding: 15px 20px 15px 47px;
-  font-family: @font-swatch2-font-family;
-  font-size:.9em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-}
-
-
-/* ===============================
    BUTTON CSS
    =============================== */
 
@@ -799,10 +773,7 @@ footer span {
   font-family: @font-swatch2-font-family;
   font-size: 1.2em;
   font-weight:@font-swatch7-font-weight;
-  line-height: @font-swatch7-line-height;
-  font-size: @font-swatch7-font-size;
-  letter-spacing: @font-swatch7-letter-spacing;
-  background-color: @font-swatch7-background-color;
+  background-color: @font-swatch6-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
       -webkit-border-radius: 50px;
@@ -1279,7 +1250,6 @@ hr.line.align-right {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    
 }
 
 .widget.signupform fieldset input:focus, .widget.signupform fieldset textarea:focus {
@@ -1352,9 +1322,8 @@ hr.line.align-right {
     font-weight: bold;
 }
 
-
 /* ===============================
-    CONTACT FORM WIDGET
+   CONTACT FORM WIDGET
    =============================== */
 
 .widget.contactform form {
