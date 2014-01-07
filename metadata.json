@@ -58,7 +58,7 @@
     "fontSwatch": {
        "title": "Droid Serif",
         "font1": {
-            "font-family": "Lato",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "24px",
@@ -66,7 +66,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "Droid Serif",
+            "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "36px",
@@ -74,7 +74,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "Droid Serif",
+            "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "20px",
             "font-weight": "inherit",
             "line-height": "34px",
@@ -82,7 +82,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "Droid Serif",
+            "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "inherit",
             "line-height": "34px",
@@ -90,7 +90,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "Lato",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "28px",
@@ -98,7 +98,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "Lato",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "28px",
@@ -109,7 +109,7 @@
             "background-color-hover": "lighten(@color-swatch2,20%)"
         },
         "font7": {
-            "font-family": "Lato",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "20px",
             "font-weight": "inherit",
             "line-height": "32px",
@@ -119,7 +119,7 @@
             "background-color-hover": "darken(@color-swatch3,10%)"
         },
         "font8": {
-            "font-family": "Droid Serif",
+            "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "38px",
             "font-weight": "400",
             "line-height": "52px",
@@ -127,7 +127,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "Droid Serif",
+            "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "24px",
@@ -135,7 +135,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "Droid Serif",
+            "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "21px",
