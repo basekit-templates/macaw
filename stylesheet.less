@@ -403,6 +403,9 @@ footer span {
   *zoom: 1;
 }
 
+.widget.extendednavigation ul li.folder:after {
+  display: none;
+}
 
 .widget.extendednavigation {
   float: right;
@@ -411,7 +414,7 @@ footer span {
 }
 
 .widget.extendednavigation a.pull {
-  display: none;
+  top:-83px;
 }
 
 .widget.extendednavigation ul {
@@ -1740,26 +1743,6 @@ hr.line.align-right {
     display: block;
     float: left;
     width: 100%;
-  }
-
-  /* NAV ICON */
-
-  .widget .extendednavigation a.pull {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: -42px;
-  }
-
-    .widget .extendednavigation a.pull:after {
-    content:"";
-    background: image('/images/nav-icon.png') no-repeat;
-    width: 38px;
-    height: 38px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: -50px;
   }
 
   /* NAV */
