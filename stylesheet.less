@@ -286,9 +286,8 @@ header {
 /* COMPANY NAME */
 
 .widget.companyname {
-  display: block;
-  float: left;
-  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .widget.companyname h1 {
@@ -299,9 +298,9 @@ header {
 /* LOGO */
 
 .widget.logo {
-  display: block;
-  float: left;
+  display: inline-block;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 /* ===============================
@@ -415,7 +414,7 @@ footer span {
 }
 
 .widget.extendednavigation a.pull {
-  top:-83px;
+  top: -62px;
 }
 
 .widget.extendednavigation ul {
@@ -1756,12 +1755,18 @@ hr.line.align-right {
 
 @media only screen and (max-width: 768px) {
 
+  .companyheader {
+    max-width: 85%;
+    padding: 30px 0 20px;
+    width: auto;
+  }
+
   /* NAV */
 
   .widget.extendednavigation {
     width: 100%;
     padding: 0;
-    border-top: 1px solid lighten(@color-swatch7,8%);
+    border-top: 1px solid lighten(@color-swatch7, 8%);
   }
 
   .widget .extendednavigation {
@@ -1775,12 +1780,16 @@ hr.line.align-right {
   .widget .extendednavigation ul {
     width: 100%;
     display: none;
-    padding: 20px 0;
+    padding: 0 0 20px;
   }
 
   .widget .extendednavigation li {
     width: 100%;
     padding: 0;
+  }
+
+  div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
+    border-bottom: 1px solid lighten(@color-swatch4, 30%);
   }
 
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
@@ -1895,8 +1904,8 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
 
   /* COMPANY HEADER */
 
-  .widget.companyheader .company-name h1 {
-    font-size:bkscale(@font-swatch1-font-size, 0.8)
+  .widget.companyname a {
+    font-size: @font-swatch1-font-size;
   }
 
   /* UL ALIGN RIGHT */
@@ -2134,31 +2143,4 @@ max-height: 150px;
   #featuregallery .widget.gallery .gallery-widget li {
     width: 96%;
   }
-}
-
-/* Animation for isotope moves */
-.isotope,
-.isotope .isotope-item {
-  /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
 }
