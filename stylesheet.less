@@ -416,7 +416,7 @@ footer span {
 }
 
 .widget.extendednavigation a.pull {
-  top: -50px;
+  top: 38px;
 }
 
 .widget.extendednavigation ul {
@@ -465,8 +465,10 @@ footer span {
 /* SELECTED */
 
 .widget.extendednavigation ul li.selected {
-  background-color: @color-swatch3;
-
+  background-color: fade(@color-swatch3, 15%);
+  .text {
+    color: @font-swatch6-color-hover;
+  }
 }
 
 .widget.extendednavigation ul li.selected:hover { 
@@ -1758,9 +1760,11 @@ hr.line.align-right {
 @media only screen and (max-width: 768px) {
 
   .companyheader {
+    float: left;
     max-width: 85%;
     padding: 20px 0 10px;
     width: auto;
+    display: block;
   }
 
   .bk-header {
