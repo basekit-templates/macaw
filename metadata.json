@@ -123,7 +123,7 @@
             "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "38px",
             "font-weight": "400",
-            "line-height": "52px",
+            "line-height": "48px",
             "color": "@color-swatch2",
             "letter-spacing": "inherit"
         },
@@ -139,7 +139,7 @@
             "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "400",
-            "line-height": "21px",
+            "line-height": "24px",
             "color": "@color-swatch2",
             "letter-spacing": "inherit"
         }

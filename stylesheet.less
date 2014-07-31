@@ -176,7 +176,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   font-family: @font-swatch5-font-family;
   color: lighten(@color-swatch5,10%);
   line-height:@font-swatch5-line-height;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .bk-footer span {
@@ -807,8 +807,9 @@ hr.line {
 }
 
 .form-group.productlist-search {
+  padding-left: 0;
   position: relative;
-  width: 99%;
+  width: 100%;
   input[type=search] {
     padding-right: 0;
     box-sizing: border-box;
@@ -1419,6 +1420,9 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
     &.button {
         button.btn {
             padding: 0 12px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
             &:hover {
                 background-color: @font-swatch7-background-color-hover;
             }
