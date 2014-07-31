@@ -60,7 +60,7 @@
        "title": "Droid Serif",
         "font1": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "18px",
+            "font-size": "17px",
             "font-weight": "400",
             "line-height": "24px",
             "color": "@color-swatch4",
@@ -86,7 +86,7 @@
             "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "inherit",
-            "line-height": "34px",
+            "line-height": "26px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -129,7 +129,7 @@
         },
         "font9": {
             "font-family": "\"Droid Serif\", Georgia, serif",
-            "font-size": "18px",
+            "font-size": "17px",
             "font-weight": "400",
             "line-height": "24px",
             "color": "@color-swatch2",

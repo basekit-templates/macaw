@@ -431,7 +431,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
  }
 
 .widget.feature .content {
-  height: 500px;
+  height: auto;
   text-align: right;
 }
 
@@ -602,6 +602,9 @@ hr.line {
         p {
             color: @color-swatch4;
             padding: 0;
+            font-family: @font-swatch5-font-family;
+            line-height: @font-swatch5-line-height;
+            font-size: @font-swatch5-font-size;
         } 
         ul {
             li {
@@ -637,6 +640,9 @@ hr.line {
         p a {
             color: @color-swatch5;
             text-decoration: none;
+            font-family: @font-swatch5-font-family;
+            line-height: @font-swatch5-line-height;
+            font-size: @font-swatch5-font-size;
         }
         a:hover span.bk-full-name {
             color: @font-swatch4-color;
@@ -656,9 +662,6 @@ hr.line {
             }
         }
         // Extra Info
-        time {
-            display: none;
-        }
         span, span a, p:last-child {
             font-size: 13px;
             color: @color-swatch3;
@@ -693,43 +696,11 @@ hr.line {
    SOCIAL BAR WIDGET / SOCIAL PROFILE
    =============================== */
 
-.widget.socialicons,
-.widget.profile .bk-profile-socialicons {
-    padding: 10px 0;
-    font-size: 1em;
-    font-family: @font-swatch7-font-family;
-}
-
-.widget.profile .bk-profile-socialicons span {
-    display: inline-block;
-}
-
 .widget.socialicons span a,
 .widget.profile .bk-profile-socialicons span a {
-    background-color: @font-swatch7-background-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 18px;
-    display: inline-block;
-    margin-right: 6px;
-    margin-bottom: 8px;
-    width: 32px;
-    height: 32px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    text-decoration: none;
-    text-indent: 99999px;
-    white-space: nowrap;
-}
-
-.widget.profile .bk-profile-socialicons span a {
-    margin-right: 10px;
-}
-
-.widget.socialicons span a:hover,
-.widget.profile .bk-profile-socialicons span a:hover {
-    background-color: @font-swatch7-background-color-hover
 }
 
 .icons.widget-align-right, .icons.align-right, .icons div.align-right, .icons.widget-align-left, .icons.align-left, .icons div.align-left {
@@ -810,6 +781,9 @@ hr.line {
     width: 25%;
      box-sizing: border-box;
   }
+  label {
+    display: block;
+  }
 }
 
 .productlist-display-form .form-group {
@@ -829,22 +803,21 @@ hr.line {
 }
 
 .form-group.productlist-search:before {
-  content: "Search";
-  display: inline-block;
   padding-bottom: .4em;
 }
 
 .form-group.productlist-search {
   position: relative;
+  width: 99%;
   input[type=search] {
     padding-right: 0;
     box-sizing: border-box;
-    width: 100%;
+    width: 79%;
   }
   button {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
+    display: inline-block;
+    margin-left: -4px;
+    width: 21%;
   }
 }
 
@@ -1142,6 +1115,120 @@ select {
     }
 }
 
+/* 8. Menu */
+
+.widget {
+    &.menusections {
+        ul {
+          background-color: @color-swatch3;
+            border: 2px solid lighten(@font-swatch5-color, 65%);
+            padding: 0;
+            text-align: center;
+            li {
+              padding: 1em;
+              margin: 0;
+              &:hover {
+                background: darken(@color-swatch3, 5%);
+              }
+            }
+            li a {
+              color: @color-swatch1;
+              font-family: @font-swatch7-font-family;
+              font-size: bkscale(@font-swatch7-font-size, 1.1); 
+              font-weight: @font-swatch7-font-weight;
+              line-height: @font-swatch7-line-height;
+            }
+        }
+    }
+}
+
+.menu {
+    .menu-item-image-wrap {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180px;
+        margin: 0.25em 0 0.75em;
+        background-position: center;
+        img {
+            display: none;
+        }
+    }
+    .menu-header {
+        margin: 2em 0 2.5em;
+        text-align: center;
+        h1 {
+          font-size: bkscale(@font-swatch2-font-size, 1.1);
+          line-height: bkscale(@font-swatch2-line-height, 1.1);
+          padding-bottom: 0;
+        }
+        p {
+            color: lighten(@font-swatch5-color, 35%);
+            font-size: @font-swatch4-font-size;
+            line-height: @font-swatch4-line-height;
+            padding: 5px 0 0;
+        }
+    }
+    .menu-subsection {
+        padding: 0;
+        .menu-subsection-header {
+            padding: 20px 0;
+            h2 {
+                color: @color-swatch4;
+            }
+        }
+    }
+    .menu-item-nutritional-title {
+        font-size: bkscale(@font-swatch5-font-size, 0.96);
+        &:before {
+            content: "\2014";
+            color: lighten(@font-swatch5-color, 35%);
+            display: block;
+            padding-bottom: 20px;
+            padding-top: 8px;
+            line-height: 8px;
+        }
+    }
+    .menu-item-nutritional-prop  {
+        font-size: bkscale(@font-swatch5-font-size, 0.9);
+        line-height: @font-swatch5-line-height;
+    }
+    .menu-section-item-dietary-props .dietary-icon {
+        background: fade(@color-swatch5, 15%);
+        font-size: bkscale(@font-swatch5-font-size, 0.82);
+        padding: 4px 10px;
+        margin-top: 15px;
+    }
+    .menu-subsection-promoted, .menu-items li.menu-item-promoted {
+        background-color: lighten(@color-swatch5, 30%);
+        padding: 2em;
+        @media @mobile {
+            padding: 1em;
+        }
+        ol {
+            padding-bottom: 0;
+        }
+        .menu-subsection-header {
+            padding: 20px 0 12px;
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .menu-subsection-promoted li.menu-item-promoted {
+      background-color: lighten(@color-swatch5, 25%);
+    }
+    .menu-subsection-name {
+        color: @font-swatch2-color;
+        margin-bottom: 0.25em;
+    }
+    .menu-item-description {
+    }
+    .menu-item-price p {
+        color: @color-swatch3;
+        font-size: bkscale(@font-swatch5-font-size, 1.12);
+    }
+}
+
 /* Forms */
 
 input, textarea {
@@ -1180,12 +1267,27 @@ input {
     }
 }
 
+.widget.ecombasketsummary a {
+  font-family: @font-swatch7-font-family;
+    line-height: 40px;
+    padding: 12px;
+    margin: 0;
+    min-height: 40px;
+    font-size: @font-swatch7-font-size;
+    font-weight: @font-swatch7-font-weight;
+    -webkit-font-smoothing: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
 button:hover, button.btn:hover, .widget.tweet a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
     background-color: @font-swatch7-background-color-hover;
     .transition(all, 0.5s, ease);
 }
 
-input, .widget.profile form fieldset input, .widget.tweet a, .widget.ecombasket .ecombasket-pull, .widget.paypalbuynow .widget.button.paypal, .widget.ecomproduct .ecom-product .ecom-product-go-to-checkout-btn, button {
+input, .widget.profile form fieldset input, .widget.tweet a, .widget.ecombasket .ecombasket-pull, .widget.paypalbuynow .widget.button.paypal, .widget.ecomproduct .ecom-product .ecom-product-go-to-checkout-btn, .widget.ecombasketsummary a, button {
     line-height: 45px;
     height: 45px;
 }
@@ -1436,7 +1538,7 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
    }
 
   .widget.feature .content {
-    height: 320px;
+    height: auto;
   }
 
   .widget.responsiveslideshow .slideshow-image-list {
@@ -1448,10 +1550,9 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
       padding-bottom: 50%;
   }
 
-  .widget.feature button
-{
+  .widget.feature button {
   padding: 14px 26px;
-  font-size: 1em;
+
 }
 
  /* GALLERY */
@@ -1537,7 +1638,7 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
    }
 
   .widget.feature .content {
-    height: 220px;
+    height: auto;
   }
 
   .widget.feature .content .spare {
