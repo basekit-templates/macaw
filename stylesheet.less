@@ -315,7 +315,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 /* SELECTED */
 
 .widget.extendednavigation ul li.selected {
-  background-color: fade(@color-swatch5, 45%);
+  background-color: fade(@color-swatch5, 15%);
   .text {
     color: @font-swatch6-color-hover;
   }
@@ -481,12 +481,13 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   padding: 17px 56px;
   border: 0;
   font-family: @font-swatch2-font-family;
+  line-height: @font-swatch7-line-height;
   font-size: 1.2em;
   font-weight:@font-swatch7-font-weight;
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
-      -webkit-border-radius: 50px;
+    -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
 }
@@ -596,67 +597,78 @@ hr.line {
 
 
 .widget.twitter {
-  margin: 20px 0;
+    padding: 20px 0;
+    margin: 20px 0;
+        p {
+            color: @color-swatch4;
+            padding: 0;
+        } 
+        ul {
+            li {
+                padding: 10px 0;
+            }
+        }
+        ul li a:hover {
+            text-decoration: none;
+        }
+        // Tweet Content
+        .twitter-profile-pic {
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+            width: 12%;
+            margin-right: 1%;
+            @media @tablet {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        .twitter-content {
+            float: none;
+            display: inline-block;
+            width: 85%;
+        span.bk-full-name {
+            color: @font-swatch4-color;
+            font-family: @font-swatch4-font-family;
+            font-size: @font-swatch4-font-size;
+            line-height: @font-swatch4-line-height;
+        }
+        // Tweet Link
+        p a {
+            color: @color-swatch5;
+            text-decoration: none;
+        }
+        a:hover span.bk-full-name {
+            color: @font-swatch4-color;
+        }
+        span a {
+            text-decoration: none;
+            &:hover {
+                color: @color-swatch2;
+                text-decoration: none;
+            }
+        }
+        p {
+            color: @color-swatch5;
+            margin-top: 4px;
+            &:last-child {
+                font-weight: inherit;
+            }
+        }
+        // Extra Info
+        time {
+            display: none;
+        }
+        span, span a, p:last-child {
+            font-size: 13px;
+            color: @color-swatch3;
+            font-weight: inherit;
+            &:hover {
+                color: darken(@color-swatch3, 15%);
+            }
+        }
+    }
 }
-
-.widget.twitter p {
-  font-size: 1.5em;
-  line-height: 1.6em;
-}
-
-.widget.twitter a {
-   color: @font-swatch5-color;
-   text-decoration: none;
-   padding-bottom: 4px;
-}
-
-.widget.twitter span a {
-  border-bottom: 0;
-  font-size: 11px;
-  color: @color-swatch3;
-}
-
-.widget.twitter a:hover {
-
-}
-
-.widget.twitter ul {
-    padding: 0px;
-    margin: 0;
-}
-
-.widget.twitter ul li {
-    border-bottom: none;
-    list-style: none;
-    font-family: @font-swatch5-font-family;
-    font-size: .6em;
-    color: @font-swatch5-color;
-    padding-bottom: 30px;
-}
-
-.widget.twitter ul li:last-child {
-    padding-bottom: 0px;
-}
-
-.widget.twitter .twitter-profile-pic {
-    float: left;
-    margin-right: 20px;
-}
-
-.widget.twitter .twitter-profile-pic a {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.widget.twitter .twitter-content span.bk-full-name {
-    font-family: @font-swatch4-font-family;
-    color: @color-swatch3;
-}
-
-.widget.twitter span, .widget.twitter time {
-    font-size: 13px;
-}
-
 
 /* ===============================
    SIGN UP
@@ -707,7 +719,7 @@ hr.line {
     -moz-border-radius: 30px;
     border-radius: 30px;
     text-decoration: none;
-    text-indent: -99999px;
+    text-indent: 99999px;
     white-space: nowrap;
 }
 
@@ -720,7 +732,7 @@ hr.line {
     background-color: @font-swatch7-background-color-hover
 }
 
-.icons.widget-align-right, .icons.align-right, .icons div.align-right {
+.icons.widget-align-right, .icons.align-right, .icons div.align-right, .icons.widget-align-left, .icons.align-left, .icons div.align-left {
     float: none;
 }
 
