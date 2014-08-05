@@ -34,46 +34,4 @@
     </div>
 </footer>
 
-<script src="{{asset('assets/isotape.js')}}"></script>
-<script>
-
-(function ()
-{
-	// Add the niceScroll plugin to the iframe html element
-	$(document).ready(function ()
-	{
-        var featuregallery = $('#page-zones__template-widgets__gallery-featuregallery'),
-            timeout = null,
-            setuptimeout = null;
-
-        function setUpGallery() {
-            featuregallery.isotope({
-                itemSelector: 'li',
-                masonry: {}
-            });
-        }
-
-        featuregallery.on('prerender', function() {
-            featuregallery.isotope('destroy');
-        });
-
-        featuregallery.on('rendered', function(){
-            clearTimeout(setuptimeout);
-            setuptimeout = setTimeout(function() {
-                setUpGallery();
-            },1000);
-        });
-
-        window.addEventListener( 'resize', function() {
-            //clearTimeout(timeout);
-            //timeout = setTimeout(function() {
-                featuregallery.isotope('reLayout');
-            //},1000);
-        }, false );
-
-        setUpGallery();
-    });
-}());
-</script>
-
 {% endblock %}
