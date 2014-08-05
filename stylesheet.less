@@ -1780,7 +1780,7 @@ max-height: 150px;
     display:none;
 }
 
-#featuregallery .widget.gallery li span.inner {
+#featuregallery .widget.gallery li span.inner, #featuregallery .widget.gallery li span.inner a {
     position: static;
     left: auto;
     right: auto;
@@ -1798,6 +1798,10 @@ max-height: 150px;
 .no-js #featuregallery .widget.gallery  .gallery-widget li,
 .no-cssanimations #featuregallery .gallery-widget li {
   opacity: 1;
+}
+
+.widget.gallery .inner:hover .image-data {
+  display: none;
 }
 
 #featuregallery .widget.gallery .gallery-widget li img {
