@@ -60,7 +60,7 @@
        "title": "Droid Serif",
         "font1": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "17px",
+            "font-size": "18px",
             "font-weight": "400",
             "line-height": "24px",
             "color": "@color-swatch4",
@@ -86,7 +86,7 @@
             "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "inherit",
-            "line-height": "26px",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -113,7 +113,7 @@
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
             "font-weight": "inherit",
-            "line-height": "25px",
+            "line-height": "24px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
@@ -123,13 +123,13 @@
             "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "38px",
             "font-weight": "400",
-            "line-height": "48px",
+            "line-height": "46px",
             "color": "@color-swatch2",
             "letter-spacing": "inherit"
         },
         "font9": {
             "font-family": "\"Droid Serif\", Georgia, serif",
-            "font-size": "17px",
+            "font-size": "18px",
             "font-weight": "400",
             "line-height": "24px",
             "color": "@color-swatch2",
@@ -139,7 +139,7 @@
             "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "400",
-            "line-height": "24px",
+            "line-height": "21px",
             "color": "@color-swatch2",
             "letter-spacing": "inherit"
         }

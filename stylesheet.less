@@ -77,7 +77,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget.profile .twitter a img {
-  border-radius: 30px;
+    border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius:  30px;
     border-radius: 30px;
@@ -102,6 +102,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   display: inline;
 }
 
+
 /* ===============================
    HEADER
    =============================== */
@@ -109,7 +110,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .bk-header {
   padding: 20px 0;
   background-color: @color-swatch7;
-  border-bottom: 1px  solid lighten(@color-swatch4,40%);
+  border-bottom: 1px solid lighten(@color-swatch4, 40%);
 }
 
 .companyheader {
@@ -174,8 +175,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .bk-footer p {
   font-family: @font-swatch5-font-family;
-  color: lighten(@color-swatch5,10%);
-  line-height:@font-swatch5-line-height;
+  color: lighten(@color-swatch5, 10%);
+  line-height: @font-swatch5-line-height;
   padding-bottom: 10px;
 }
 
@@ -187,27 +188,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    STANDARD NAVIGATION
    =============================== */
 
-.widget.navigation {
-}
-
 .widget.navigation ul {
   padding: 0;
   margin: 20px 0 0;
-}
-
-.widget.navigation ul.align-center li
-{
-  text-align: center;
-}
-
-.widget.navigation ul.align-left li
-{
-  text-align: left;
-}
-
-.widget.navigation ul.align-right li
-{
-  text-align: right;
 }
 
 .widget.navigation ul li {
@@ -274,22 +257,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   padding: 0;
 }
 
-/* ALIGNMENTS */
-
-.widget.extendednavigation ul.align-center li, .widget.extendednavigation ul.align-center li:hover ul li {
-  text-align: center;
-}
-
-.widget.extendednavigation ul.align-left li, .widget.extendednavigation ul.align-left li:hover ul li
-{
-  text-align: left;
-}
-
-.widget.extendednavigation ul.align-right li, .widget.extendednavigation ul.align-right li:hover ul li
-{
-  text-align: right;
-}
-
 .widget.extendednavigation ul li {
   float: left;
   display: block;
@@ -315,14 +282,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 /* SELECTED */
 
 .widget.extendednavigation ul li.selected {
-  background-color: fade(@color-swatch5, 15%);
+  background-color: fade(@color-swatch3, 15%);
   .text {
     color: @font-swatch6-color-hover;
   }
-}
-
-.widget.extendednavigation ul li.selected:hover { 
-
 }
 
 /* FOLDER */
@@ -366,13 +329,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.widget.extendednavigation li:hover > ul li:first-child {
-}
-
-.widget.extendednavigation li:hover > ul li:hover {
-
-}
-
 .widget.extendednavigation li:hover > ul > li > a {
   display: block;
   background-image: none;
@@ -388,14 +344,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   background-repeat: no-repeat;
 }
 
-.widget.extendednavigation li:hover > ul > li > a {
-
-}
-
 .widget.extendednavigation li:hover > ul li .text:hover {
   color: @font-swatch6-color-hover;
 }
-
 
 /* EXTENDED NAVIGATION - INSIDE ZONE */
 
@@ -421,7 +372,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    FEATURE
    =============================== */
 
- .widget.feature {
+.widget.feature {
   width: 100%;
   padding: 0;
 }
@@ -431,7 +382,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
  }
 
 .widget.feature .content {
-  height: auto;
+  height: 500px;
   text-align: right;
 }
 
@@ -475,19 +426,17 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* FEATURE BUTTON */
 
-.widget.feature button
-{
+.widget.feature button {
   margin: 1em 0;
   padding: 17px 56px;
   border: 0;
   font-family: @font-swatch2-font-family;
-  line-height: @font-swatch7-line-height;
   font-size: 1.2em;
   font-weight:@font-swatch7-font-weight;
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
-    -webkit-border-radius: 50px;
+      -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
 }
@@ -501,67 +450,52 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   transition: background-color 0.15s ease-in-out;
 }
 
-
-/* ===============================
-   PAYPAL BUTTON
+  /* ===============================
+   DROPBOX / PAYPAL / TWITTER BUTTON
    =============================== */
 
 .widget.paypalbuynow .widget.button.paypal {
-      -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    margin: 0;
-  }
-
-  /* ===============================
-   DROPBOX BUTTON
-   =============================== */
-
+    -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
 
 .widget.dropbox button {
-      -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    margin: 0;
-  }
-
-  .widget.tweet a {
-    display: inline-block;
     -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    margin: 0;
-  }
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.widget.tweet a {
+  display: inline-block;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  margin: 0;
+}
 
 /* ===============================
    CONTENT CSS
    =============================== */
 
-
-.widget.content
-{
+.widget.content {
     padding: 0;
     overflow: hidden;
 }
 
-.widget.content span.expand
-{
+.widget.content span.expand {
     font-family: @font-swatch3-font-family;
     background-color: @color-swatch3;
     color: @font-swatch7-color;
     font-size: @font-swatch5-font-size;
     padding: 4px 8px;
     margin: 4px 0;
-    /*-webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;*/
     cursor: pointer;
     display: inline-block;
 }
 
 .widget.content span.expand:hover,
-.widget.content span.expand:focus
-{
+.widget.content span.expand:focus {
     cursor: pointer;
     background-color: darken(@color-swatch3,5%);
 }
@@ -577,24 +511,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 /* ===============================
-   DIVIDER WIDGET
-   =============================== */
-
-.widget.line {
-    padding: 20px 0;
-}
-
-hr.line {
-   background-color: lighten(@color-swatch5,18%);
-   height: 1px;
-   width: 100%;
-   border: none;
-}
-
-/* ===============================
    TWITTER WIDGET
    =============================== */
-
 
 .widget.twitter {
     padding: 20px 0;
@@ -672,10 +590,6 @@ hr.line {
         }
     }
 }
-
-/* ===============================
-   SIGN UP
-   =============================== */
 
 /* PLACEHOLDER CSS */
 
@@ -772,7 +686,163 @@ hr.line {
 }
 
 /* ===============================
-   Ecommerce
+   GALLERY
+   =============================== */
+
+.widget.gallery ul li span.inner {
+    .title {
+        color: @color-swatch1;
+        font-weight: @font-swatch3-font-weight;
+        font-size: bkscale(@font-swatch4-font-size, 1.1);
+        margin-bottom: 0.3em;
+    }
+    .description {
+        color: @color-swatch1;
+    }
+}
+
+.widget.gallery .inner .image-data {
+    background: fade(@color-swatch4, 65%);
+    display: block;
+    opacity: 0;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.widget.gallery .inner:hover .image-data {
+    .transition( opacity, 0.5s, ease );
+    opacity: 1;
+}
+
+/* ===============================
+   SLIDESHOW WIDGET
+   =============================== */
+
+.widget.responsiveslideshow {
+    .slideshow-image-list,
+    .slideshow-widget {
+        min-height: 450px;
+        @media @tablet {
+            min-height: 350px;
+        }
+        @media @mobile {
+            min-height: 280px;
+            height: 280px;
+        }
+    }
+    .title,
+    .description {
+        display: block;
+        font-size: 15px;
+        padding: 5px 0 5px 10px;
+    }
+    .description {
+      padding-top: 0;
+    }
+    .content-wrapper {
+        background: rgba(0,0,0,0.5);
+    }
+    .slideshow-widget {
+        /* Arrows */
+        .btn-prev,
+        .btn-next {
+            font-size: 0;
+            z-index: 11;
+            text-indent: -99999px;
+            width: 40px;
+            height: 40px;
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            @media @mobile {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .btn-prev {
+            &:after {
+                content: "\2190";
+                color: #fff;
+                top: 4px;
+                @media @mobile {
+                    top: 1px;
+                }
+            }
+        }
+        .btn-next {
+            &:after {
+                content: "\2192";
+                color: #fff;
+                top: 4px;
+                @media @mobile {
+                    top: 1px;
+                }
+            }
+        }
+        /* Play Button */
+        .btn-play {
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            &:after {
+                color: #fff;
+                letter-spacing: -4px;
+                top: 0;
+            }
+        }
+    }
+    /* Slideshow Controls */
+    .slideshow-widget-controls {
+        .dot {
+            width: 11px;
+            height: 11px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            &.selected {
+                background-color: @color-swatch5;
+            }
+        }
+    }
+}
+
+.widget.responsiveslideshow .btn-play:after {
+    font-size:20px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+    background: rgba(0,0,0,0.5);
+    font-size: 0;
+    text-indent: -99999px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 12;
+    width: 42px;
+    height: 42px;
+    top: -5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    @media @mobile {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play:after {
+    top:-7px;
+    @media @mobile {
+        top: -15px;
+    }
+}
+
+/* ===============================
+   ECOM
    =============================== */
 
 .productlist-filter {
@@ -916,129 +986,91 @@ select {
   font-weight: 600;
 }
 
-
-/* ===============================
-   SLIDESHOW WIDGET
-   =============================== */
-.widget.responsiveslideshow {
-    .slideshow-image-list,
-    .slideshow-widget {
-        min-height: 450px;
-        @media @tablet {
-            min-height: 350px;
-        }
-        @media @mobile {
-            min-height: 280px;
-            height: 280px;
-        }
+.widget.ecombasketsummary {
+  table {
+    border: 1px solid lighten(@color-swatch5, 20%);
+    border-spacing: 0;
+    padding: 30px;
+    width: 100%;
+    list-style: none;
+    font-size: 18px;
+    color: @color-swatch4;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    @media @mobile {
+      padding: 10px;
     }
-    .title,
-    .description {
+    tr:first-child { 
+      @media @mobile {
+          display: table-header-group;
+          th:nth-child(2) {
+            display: none;
+          }
+          th:nth-child(3) {
+            padding-left: 12px;
+          }
+      }
+    }
+    th {
+      text-align: left;
+    }
+    .basket-summary-items {
+      background: transparent;
+      @media @mobile {
+        display: table-row-group;
+        + tr {
+          display: block;
+        }
+      }
+      &:last-child {
+        td {
+          padding-bottom: 25px;
+        }
+      }
+      .image-wrap {
+        background-image: none!important;
+      }
+      td:nth-child(2) {
+        padding-left: 15px;
+      }
+      .basket-summary-pricepu, .basket-summary-quantity, .basket-summary-amount {
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height;
+      }
+      .basket-summary-pricepu {
         display: block;
-        font-size: 15px;
-        padding: 5px 0 5px 10px;
-    }
-    .description {
-      padding-top: 0;
-    }
-    .content-wrapper {
-        background: rgba(0,0,0,0.5);
-    }
-    .slideshow-widget {
-        /* Arrows */
-        .btn-prev,
-        .btn-next {
-            font-size: 0;
-            z-index: 11;
-            text-indent: -99999px;
-            width: 40px;
-            height: 40px;
-            background: rgba(0,0,0,0.5);
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            @media @mobile {
-                width: 30px;
-                height: 30px;
-            }
+      }
+      .basket-summary-quantity, .basket-summary-quantitybtn {
+        display: inline-block;
+        button {
+          height: auto;
+          line-height: initial;
         }
-        .btn-prev {
-            &:after {
-                content: "\2190";
-                color: #fff;
-                top: 4px;
-                @media @mobile {
-                    top: 1px;
-                }
-            }
-        }
-        .btn-next {
-            &:after {
-                content: "\2192";
-                color: #fff;
-                top: 4px;
-                @media @mobile {
-                    top: 1px;
-                }
-            }
-        }
-        /* Play Button */
-        .btn-play {
-            background: rgba(0,0,0,0.5);
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-            &:after {
-                color: #fff;
-                letter-spacing: -4px;
-                top: 0;
-            }
-        }
+      }
+      .basket-summary-amount {
+        color: darken(@color-swatch4, 10%);
+      }
     }
-    /* Slideshow Controls */
-    .slideshow-widget-controls {
-        .dot {
-            width: 11px;
-            height: 11px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            &.selected {
-                background-color: @color-swatch5;
-            }
-        }
+    .basket-summary-subtotal {
+      color: darken(@color-swatch4, 10%);
+      display: block;
+      font-size: bkscale(@font-swatch5-font-size, 1.05);
+      line-height: bkscale(@font-swatch5-font-size, 1.1);
+      margin-top: 25px;
+      padding: 10px 10px 5px;
     }
+  }
 }
 
-.widget.responsiveslideshow .btn-play:after {
-    font-size:20px;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-play {
-    background: rgba(0,0,0,0.5);
-    font-size: 0;
-    text-indent: -99999px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 12;
-    width: 42px;
-    height: 42px;
-    top: -5%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    @media @mobile {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-play:after {
-    top:-7px;
-    @media @mobile {
-        top: -15px;
-    }
+.basket-summary-submit, .basket-summary-empty-cta {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; 
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0 12px;
+  line-height: 45px;
+  height: 45px;
+  font-weight: @font-swatch7-font-weight;
 }
 
 /* ===============================
@@ -1271,7 +1303,7 @@ input {
 .widget.ecombasketsummary a {
   font-family: @font-swatch7-font-family;
     line-height: 40px;
-    padding: 12px;
+    padding: 0 12px;
     margin: 0;
     min-height: 40px;
     font-size: @font-swatch7-font-size;
@@ -1288,7 +1320,7 @@ button:hover, button.btn:hover, .widget.tweet a:hover, .widget.button.paypal:hov
     .transition(all, 0.5s, ease);
 }
 
-input, .widget.profile form fieldset input, .widget.tweet a, .widget.ecombasket .ecombasket-pull, .widget.paypalbuynow .widget.button.paypal, .widget.ecomproduct .ecom-product .ecom-product-go-to-checkout-btn, .widget.ecombasketsummary a, button {
+input, .widget.profile form fieldset input, .widget.tweet a, .widget.ecombasket .ecombasket-pull, .widget.paypalbuynow .widget.button.paypal, .widget.ecomproduct .ecom-product .ecom-product-go-to-checkout-btn, button {
     line-height: 45px;
     height: 45px;
 }
@@ -1559,13 +1591,6 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
 
 }
 
- /* GALLERY */
-
-.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-font-size:bkscale(@font-swatch5-font-size,0.9);
-line-height:bkscale(@font-swatch5-line-height,0.9);
-}
-
 /* SLIDESHOW */
 
 .widget.responsiveslideshow .slideshow-widget .btn-prev {
@@ -1578,21 +1603,6 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
 
 }
 
-@media only screen and (max-width : 650px) and (min-width : 481px) {
-   /* Tablet view: 2 tiles */
-   .widget.gallery li {
-      width: 50%;
-      /*padding-bottom: 50%;*/
-   }
-}
-
-@media only screen and (max-width : 1050px) and (min-width : 651px) {
-   /* Small desktop / ipad view: 3 tiles */
-   .widget.gallery li {
-      width: 33.3%;
-      /*padding-bottom: 33.3%;*/
-   }
-}
 
 /* ===============================
    IPHONE WIDTH
@@ -1653,23 +1663,8 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
     margin-bottom: 20px;
   }
 
-   /* GALLERY */
-
-.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-max-height: 150px;
-}
-
-  /* SLIDESHOW */
-  .widget.responsiveslideshow .title {
-    padding-bottom:7px;
-  }
-
-  .widget.responsiveslideshow .description {
-    display:none;
-  }
 
  /* SIGN UP */
-
 
 
  .widget.signupform fieldset button.btn {
@@ -1689,53 +1684,6 @@ max-height: 150px;
   transition: background-color 0.15s ease-in-out;
 }
 
-    /* CLICK TO CALL */
-
-    .widget.clicktocall a {
-        background-image: image('/images/ic-call.svg');
-        background-size: 7px;
-        background-position: 14px center;
-        background-repeat: no-repeat;
-        background-color: @font-swatch7-background-color;
-
-        font-family: @font-swatch7-font-family;
-        font-size: .75em;
-        font-weight: @font-swatch7-font-weight;
-        line-height: @font-swatch7-line-height;
-        color: @font-swatch7-color;
-        letter-spacing: @font-swatch7-letter-spacing;
-        background-color: @font-swatch7-background-color;
-        padding: 12px 12px 12px 34px;
-        border: 1px solid darken(@color-swatch3,5%);
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-        text-decoration: none;
-        text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-    }
-
-    .widget.clicktocall a:hover {
-        background-color: @font-swatch7-background-color-hover;
-        cursor: pointer;
-    }
-
-    .widget.clicktocall a:active {
-        box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
-    }
-
-  /* GALLERY */
-
-  .widget.gallery p
-  {
-    padding: 10px;
-  }
-
-  /* Smartphone view: 1 tile */
-  .widget.gallery li {
-      width: 100%;
-      padding-bottom: 100%;
-  }
 }
 
 @media only screen and (min-width: 1140px) {
