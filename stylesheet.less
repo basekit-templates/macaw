@@ -115,9 +115,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .companyheader {
   display: inline-block;
-  padding: 0;
+  padding: 10px 0 0;
   width: 30%;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .companyname a {
@@ -182,6 +182,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .bk-footer span {
   color: @color-swatch1;
+}
+
+.bk-footer .widget.profile form input {
+  background-color: @color-swatch2, 10%;
 }
 
 /* ===============================
@@ -886,9 +890,17 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     width: 79%;
   }
   button {
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    border-radius: 0 50px 50px 0;
     display: inline-block;
     margin-left: -4px;
     width: 21%;
+    @media @mobile {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+    }
   }
 }
 
@@ -1016,6 +1028,9 @@ select {
     }
     .basket-summary-items {
       background: transparent;
+      td:first-child {
+        width: 25%;
+      }
       @media @mobile {
         display: table-row-group;
         + tr {
@@ -1028,7 +1043,11 @@ select {
         }
       }
       .image-wrap {
-        background-image: none!important;
+        background-position: -9999px;
+        background-size: contain;
+        img {
+            max-width: 90%!important;
+        }
       }
       td:nth-child(2) {
         padding-left: 15px;
@@ -1040,7 +1059,14 @@ select {
       .basket-summary-pricepu {
         display: block;
       }
-      .basket-summary-quantity, .basket-summary-quantitybtn {
+      .basket-summary-quantitybtn {
+        display: block;
+        span {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      .basket-summary-quantity {
         display: inline-block;
         button {
           height: auto;
@@ -1303,7 +1329,7 @@ input {
 .widget.ecombasketsummary a {
   font-family: @font-swatch7-font-family;
     line-height: 40px;
-    padding: 0 12px;
+    padding: 0;
     margin: 0;
     min-height: 40px;
     font-size: @font-swatch7-font-size;
@@ -1364,6 +1390,9 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
             padding: 0 12px;
             margin-top: 10px;
             line-height: 40px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
             @media @mobile {
                 width: 100%;
             }
@@ -1377,7 +1406,13 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
                 margin-left: -4px;
                 vertical-align: top;
                 width: 25%;
+                -webkit-border-radius: 0 50px 50px 0;
+                -moz-border-radius: 0 50px 50px 0;
+                border-radius: 0 50px 50px 0;
                 @media @mobile {
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    border-radius: 50px;
                     left: 0;
                     margin-left: 0;
                     margin-top: 10px;
@@ -1401,7 +1436,13 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
             position: relative;
             vertical-align: top;
             padding: inherit;
+            -webkit-border-radius: 0 50px 50px 0;
+            -moz-border-radius: 0 50px 50px 0;
+            border-radius: 0 50px 50px 0;
             @media @mobile {
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
                 margin-top: 10px;
                 width: 100%;
             }
@@ -1440,10 +1481,16 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
             position: relative;
             width: 20%;
             vertical-align: top;
+            -webkit-border-radius: 0 50px 50px 0;
+            -moz-border-radius: 0 50px 50px 0;
+            border-radius: 0 50px 50px 0;
             &:hover {
                 background-color: @font-swatch7-background-color-hover;
             }
             @media @mobile {
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
                 margin-top: 10px;
                 width: 100%;
             }
