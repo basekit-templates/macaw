@@ -896,11 +896,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     display: inline-block;
     margin-left: -4px;
     width: 21%;
-    @media @mobile {
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
-    }
   }
 }
 
@@ -954,6 +949,10 @@ select {
 
 .productlist-item-count {
   clear: both;
+}
+
+.ecom-productslist-product a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -1369,6 +1368,12 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
     .transition(all, 0.5s, ease);
 }
 
+button.btn {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
 .widget {
     &.contactform {
         label {
@@ -1646,6 +1651,19 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
 
 .widget.responsiveslideshow .slideshow-widget .btn-next {
   background-size: contain;
+}
+
+.form-group.productlist-search {
+  input[type=search] {
+    width: 100%;
+  }
+  button {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 }
