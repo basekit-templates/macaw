@@ -852,7 +852,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .productlist-filter {
    margin: 0 auto;
   .form-group {
-    width: 25%;
      box-sizing: border-box;
   }
   label {
@@ -883,19 +882,19 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .form-group.productlist-search {
   padding-left: 0;
   position: relative;
-  width: 100%;
   input[type=search] {
     padding-right: 0;
     box-sizing: border-box;
-    width: 79%;
   }
   button {
     -webkit-border-radius: 0 50px 50px 0;
     -moz-border-radius: 0 50px 50px 0;
     border-radius: 0 50px 50px 0;
     display: inline-block;
-    margin-left: -4px;
-    width: 21%;
+    margin-left: -5px;
+    position: relative;
+    width: auto;
+    vertical-align: top;
   }
 }
 
@@ -958,11 +957,10 @@ select {
 @media (max-width: 768px) {
   .productlist-display-form {
     label {
-      display: inline-block;
-      width: 19%;
+      display: block;
     }
     select {
-      width: 80%;
+      width: 100%;
     }
   }
   .productlist-display-form .form-group {
@@ -1339,7 +1337,6 @@ input {
     }
 }
 
-
 button:hover, button.btn:hover, .widget.tweet a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
     background-color: @font-swatch7-background-color-hover;
     .transition(all, 0.5s, ease);
@@ -1658,6 +1655,7 @@ button.btn {
     width: 100%;
   }
   button {
+    margin-left: 0;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
