@@ -2,15 +2,18 @@
 
 {% block content %}
 
- <header>
+<header class="bk-header">
     <div class="wrapper clearfix">
-       {{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/logo.png')})|raw}}
-       {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+        {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
     </div>
 </header>
 
 <div class="main wrapper clearfix">
-    <div id="featuregallery">
+    <div id="featuregallery" class="js-isotope" data-isotope-options='{ "columnWidth": 200, "itemSelector": "li" }'>
         {{widget('gallery', 'featuregallery', {})|raw}}
     </div>
     {{zone('main')|raw}}
@@ -31,46 +34,10 @@
     </div>
 </footer>
 
-<script src="{{asset('assets/isotape.js')}}"></script>
-<script>
 
-(function ()
-{
-	// Add the niceScroll plugin to the iframe html element
-	$(document).ready(function ()
-	{
-        var featuregallery = $('#page-zones__template-widgets__gallery-featuregallery'),
-            timeout = null,
-            setuptimeout = null;
 
-        function setUpGallery() {
-            featuregallery.isotope({
-                itemSelector: 'li',
-                masonry: {}
-            });
-        }
+<script src="{{asset('assets/isotope.js')}}"></script>
 
-        featuregallery.on('prerender', function() {
-            featuregallery.isotope('destroy');
-        });
 
-        featuregallery.on('rendered', function(){
-            clearTimeout(setuptimeout);
-            setuptimeout = setTimeout(function() {
-                setUpGallery();
-            },1000);
-        });
-
-        window.addEventListener( 'resize', function() {
-            //clearTimeout(timeout);
-            //timeout = setTimeout(function() {
-                featuregallery.isotope('reLayout');
-            //},1000);
-        }, false );
-
-        setUpGallery();
-    });
-}());
-</script>
 
 {% endblock %}

@@ -71,7 +71,7 @@
             "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "36px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
@@ -111,9 +111,9 @@
         },
         "font7": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "20px",
+            "font-size": "16px",
             "font-weight": "inherit",
-            "line-height": "32px",
+            "line-height": "24px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
@@ -123,7 +123,7 @@
             "font-family": "\"Droid Serif\", Georgia, serif",
             "font-size": "38px",
             "font-weight": "400",
-            "line-height": "52px",
+            "line-height": "46px",
             "color": "@color-swatch2",
             "letter-spacing": "inherit"
         },

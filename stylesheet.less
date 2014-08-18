@@ -11,102 +11,13 @@ body {
   margin: 0 5%;
 }
 
-a {
-  font-family:@font-swatch2-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  color:@color-swatch3;
-  text-decoration: none;
+.transition (@prop: all, @time: 0.5s, @ease: ease) {
+    -webkit-transition: @prop @time @ease;  
+    -moz-transition:    @prop @time @ease;
+    -ms-transition:     @prop @time @ease; 
+    -o-transition:      @prop @time @ease;  
+    transition:         @prop @time @ease;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, p {
-  margin: 0;
-  padding: 0 0 10px;
-}
-
-h1 {
-  font-family:@font-swatch1-font-family;
-  font-weight: @font-swatch1-font-weight;
-  color:@font-swatch1-color;
-  line-height:@font-swatch1-line-height;
-  letter-spacing: @font-swatch1-letter-spacing;
-  font-size: @font-swatch1-font-size;
-}
-
-h2
-{
-  font-family:@font-swatch2-font-family;
-  font-size: @font-swatch2-font-size;
-  font-weight: @font-swatch2-font-weight;
-  line-height:@font-swatch2-line-height;
-  color: @font-swatch2-color;
-  letter-spacing: @font-swatch2-letter-spacing;
-  padding: 5px 10px;
-  background-color: @color-swatch2;
-  display: inline-block;
-}
-
-h3
-{
-  font-family:@font-swatch3-font-family;
-  font-size:@font-swatch3-font-size;
-  font-weight: @font-swatch3-font-weight;
-  color: @font-swatch3-color;
-  line-height:@font-swatch3-line-height;
-  letter-spacing: @font-swatch3-letter-spacing;
-}
-
-h4
-{
-  font-family:@font-swatch4-font-family;
-  font-size:@font-swatch4-font-size;
-  font-weight:@font-swatch4-font-weight;
-  line-height:@font-swatch4-line-height;
-  color:@font-swatch4-color;
-  letter-spacing: @font-swatch4-letter-spacing;
-}
-
-p
-{
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
-
-blockquote {
-    margin: 30px 0;
-    quotes: "\201C""\201D""\2018""\2019";
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: darken(@font-swatch5-color,10%);
-}
-  blockquote:before {
-  font-family: georgia;
-  color: @color-swatch2;
-  content:open-quote;
-  font-size:4em;
-  line-height:.1em;
-  margin-right:.1em;
-  vertical-align:-.4em;
-}
-  blockquote p, ol, li, ul {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-}
-
-
 
 /* ===============================
    CUSTOM CSS
@@ -130,10 +41,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   line-height: @font-swatch5-line-height;
   color: @font-swatch5-color;
   display: block;
-}
-
-.widget.profile {
-
 }
 
 /* ===============================
@@ -170,7 +77,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget.profile .twitter a img {
-  border-radius: 30px;
+    border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius:  30px;
     border-radius: 30px;
@@ -191,66 +98,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   color: @color-swatch1;
 }
 
-footer .widget.profile .twitter span {
+.bk-footer .widget.profile .twitter span {
   display: inline;
 }
 
-
-/* ===============================
-   SINGLE EMAIL FORM IN FOOTER
-   =============================== */
-
-
-
-.widget.profile fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-.widget.profile fieldset label {
-    width: 100%;
-    float: left;
-    font-family: @font-swatch5-font-family;
-    color: lighten(@color-swatch5,10%);
-    line-height:@font-swatch5-line-height;
-    letter-spacing: @font-swatch4-letter-spacing;
-}
-
-.widget.profile fieldset input {
-    height: 40px;
-    width: 60%;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 8px;
-    margin-top: 6px;
-    margin-bottom: 30px;
-    padding: 0;
-    float:left;
-    border-radius: none;
-}
-
-.widget.profile fieldset button.btn {
-    width: 25%;
-    height: 44px;
-    padding: 1px;
-    margin-top: 6px;
-    border: 1px solid darken(@color-swatch3,5%);
-    font-family: @font-swatch7-font-family;
-    font-size: 16px;
-    font-weight:@font-swatch7-font-weight;
-    background-color: @font-swatch7-background-color;
-    color: @font-swatch7-color;
-    text-decoration: none;
-    letter-spacing: 1px;
-    text-shadow: none;
-}
-
-.widget.profile fieldset button.btn:hover {
-    background-color: @font-swatch7-background-color-hover;
-    cursor: pointer;
-}
 
 /* ===============================
    HEADER
@@ -259,14 +110,14 @@ footer .widget.profile .twitter span {
 .bk-header {
   padding: 20px 0;
   background-color: @color-swatch7;
-  border-bottom: 1px  solid lighten(@color-swatch4,40%);
+  border-bottom: 1px solid lighten(@color-swatch4, 40%);
 }
 
 .companyheader {
   display: inline-block;
-  padding: 0;
+  padding: 10px 0 0;
   width: 30%;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .companyname a {
@@ -307,14 +158,14 @@ footer .widget.profile .twitter span {
    FOOTER
    =============================== */
 
-footer {
+.bk-footer {
   padding: 4em 0;
   background-color: @color-swatch2;
   min-height: 150px;
   color: @color-swatch1;
 }
 
-footer h2 {
+.bk-footer h2 {
   color: @color-swatch1;
   font-size:bkscale(@font-swatch2-font-size, 0.8);
   padding: 0;
@@ -322,42 +173,28 @@ footer h2 {
   background-color: transparent;
 }
 
-footer p {
+.bk-footer p {
   font-family: @font-swatch5-font-family;
-  color: lighten(@color-swatch5,10%);
-  line-height:@font-swatch5-line-height;
-  padding-bottom: 20px;
+  color: lighten(@color-swatch5, 10%);
+  line-height: @font-swatch5-line-height;
+  padding-bottom: 10px;
 }
 
-footer span {
+.bk-footer span {
   color: @color-swatch1;
+}
+
+.bk-footer .widget.profile form input {
+  background-color: @color-swatch2, 10%;
 }
 
 /* ===============================
    STANDARD NAVIGATION
    =============================== */
 
-.widget.navigation {
-}
-
 .widget.navigation ul {
   padding: 0;
   margin: 20px 0 0;
-}
-
-.widget.navigation ul.align-center li
-{
-  text-align: center;
-}
-
-.widget.navigation ul.align-left li
-{
-  text-align: left;
-}
-
-.widget.navigation ul.align-right li
-{
-  text-align: right;
 }
 
 .widget.navigation ul li {
@@ -424,22 +261,6 @@ footer span {
   padding: 0;
 }
 
-/* ALIGNMENTS */
-
-.widget.extendednavigation ul.align-center li, .widget.extendednavigation ul.align-center li:hover ul li {
-  text-align: center;
-}
-
-.widget.extendednavigation ul.align-left li, .widget.extendednavigation ul.align-left li:hover ul li
-{
-  text-align: left;
-}
-
-.widget.extendednavigation ul.align-right li, .widget.extendednavigation ul.align-right li:hover ul li
-{
-  text-align: right;
-}
-
 .widget.extendednavigation ul li {
   float: left;
   display: block;
@@ -469,10 +290,6 @@ footer span {
   .text {
     color: @font-swatch6-color-hover;
   }
-}
-
-.widget.extendednavigation ul li.selected:hover { 
-
 }
 
 /* FOLDER */
@@ -516,13 +333,6 @@ footer span {
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.widget.extendednavigation li:hover > ul li:first-child {
-}
-
-.widget.extendednavigation li:hover > ul li:hover {
-
-}
-
 .widget.extendednavigation li:hover > ul > li > a {
   display: block;
   background-image: none;
@@ -538,14 +348,9 @@ footer span {
   background-repeat: no-repeat;
 }
 
-.widget.extendednavigation li:hover > ul > li > a {
-
-}
-
 .widget.extendednavigation li:hover > ul li .text:hover {
   color: @font-swatch6-color-hover;
 }
-
 
 /* EXTENDED NAVIGATION - INSIDE ZONE */
 
@@ -571,7 +376,7 @@ footer span {
    FEATURE
    =============================== */
 
- .widget.feature {
+.widget.feature {
   width: 100%;
   padding: 0;
 }
@@ -625,8 +430,7 @@ footer span {
 
 /* FEATURE BUTTON */
 
-.widget.feature button
-{
+.widget.feature button {
   margin: 1em 0;
   padding: 17px 56px;
   border: 0;
@@ -641,8 +445,7 @@ footer span {
     border-radius: 50px;
 }
 
-.widget.feature button:hover 
-{
+.widget.feature button:hover {
   background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
   -webkit-transition: background-color 0.15s ease-in-out;
@@ -651,227 +454,52 @@ footer span {
   transition: background-color 0.15s ease-in-out;
 }
 
-.widget.feature button.btn.justifyleft
-{
-    text-align: left;
-}
-
-.widget.feature button.btn.justifycenter
-{
-    text-align: center;
-}
-
-.widget.feature button.btn.justifyright
-{
-    text-align: right;
-}
-
-.widget.feature button.btn.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.feature button.btn.italic {
-    font-style: italic;
-}
-
-.widget.feature button.btn.bold {
-    font-weight: bold;
-}
-
-.widget.feature button span {
-    vertical-align: center;
-}
-
-.widget.feature button i {
-    margin-right: 5px;
-}
-
-/* ===============================
-   FEATURE LAYOUTS
+  /* ===============================
+   DROPBOX / PAYPAL / TWITTER BUTTON
    =============================== */
-
-/* LEFT ALIGN */
-
-.widget.feature.align-left .content {
-  width: 100%;
-  text-align: left;
-}
-
-/* CENTER ALIGN */
-
-.widget.feature.align-center .content {
-  width: 100%;
-  text-align: center;
-}
-
-/* RIGHT ALIGN */
-
-.widget.feature.align-right .content {
-  width: 100%;
-  text-align: right;
-}
-
-/* ===============================
-   IMAGE WIDGET
-   =============================== */
-
-.widget.image img {
-    display: block;
-    max-width: 100%;
-    border: 0;
-    border-width: 0;
-}
-
-.widget.image {
-
-}
-
-.widget.image span.image-title {
-    display: block;
-    margin: 5px;
-    font-family: @font-swatch4-font-family;
-    font-weight: @font-swatch4-font-weight;
-    font-size: @font-swatch4-font-size;
-    text-align: center;
-    line-height: @font-swatch4-line-height;
-}
-
-.widget.image span.image-description {
-    display: block;
-    margin: 5px;
-    text-align: center;
-    font-family: @font-swatch5-font-family;
-    font-weight: @font-swatch5-font-weight;
-    font-size: @font-swatch5-font-size;
-    line-height: @font-swatch5-line-height;
-}
-
-/* ===============================
-   PAYPAL BUTTON
-   =============================== */
-
 
 .widget.paypalbuynow .widget.button.paypal {
-      -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-  }
-
-  /* ===============================
-   DROPBOX BUTTON
-   =============================== */
-
+    -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
 
 .widget.dropbox button {
-      -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-  }
-
-/* ===============================
-   BUTTON CSS
-   =============================== */
-
-.widget.button {
-    padding: 0;
+    -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
 }
 
-
-.widget.button button
-{
-  margin: 1em 0;
-  padding: 17px 56px;
-  border: 0;
-  font-family: @font-swatch2-font-family;
-  font-size: 1.2em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch6-background-color;
-  color: @font-swatch7-color;
-  text-decoration: none;
-      -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
-
-.widget.button button:hover 
-{
-  background-color: @font-swatch6-background-color-hover;
-  cursor: pointer;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-} 
-
-
-/* JUSTIFY */
-
-.widget.button button.btn.justifyleft
-{
-    text-align: left;
-}
-
-.widget.button button.btn.justifycenter
-{
-    text-align: center;
-}
-
-.widget.button button.btn.justifyright
-{
-    text-align: right;
-}
-
-.widget.button button.btn.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.button button.btn.italic {
-    font-style: italic;
-}
-
-.widget.button button.btn.bold {
-    font-weight: bold;
-}
-
-.widget.button span {
-    vertical-align: center;
-}
-
-.widget.button i {
-    margin-right: 5px;
+.widget.tweet a {
+  display: inline-block;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  margin: 0;
 }
 
 /* ===============================
    CONTENT CSS
    =============================== */
 
-
-.widget.content
-{
+.widget.content {
     padding: 0;
     overflow: hidden;
 }
 
-.widget.content span.expand
-{
+.widget.content span.expand {
     font-family: @font-swatch3-font-family;
     background-color: @color-swatch3;
     color: @font-swatch7-color;
     font-size: @font-swatch5-font-size;
     padding: 4px 8px;
     margin: 4px 0;
-    /*-webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;*/
     cursor: pointer;
     display: inline-block;
 }
 
 .widget.content span.expand:hover,
-.widget.content span.expand:focus
-{
+.widget.content span.expand:focus {
     cursor: pointer;
     background-color: darken(@color-swatch3,5%);
 }
@@ -887,385 +515,84 @@ footer span {
 }
 
 /* ===============================
-   IMAGE WIDGET
-   =============================== */
-
-.widget.image img
-{
-    display:block;
-    max-width: 100%;
-}
-
-.widget.image {
-}
-
-.widget.image span.image-title {
-    display: block;
-    margin:5px;
-    font-family: @font-swatch4-font-family;
-    font-weight: @font-swatch4-font-weight;
-    font-size: @font-swatch4-font-size;
-    text-align: center;
-    line-height: @font-swatch4-line-height;
-}
-
-.widget.image span.image-description {
-    display: block;
-    margin:5px;
-    text-align: center;
-    font-family: @font-swatch5-font-family;
-    font-weight: @font-swatch5-font-weight;
-    font-size: @font-swatch5-font-size;
-    line-height: @font-swatch5-line-height;
-}
-
-/* ===============================
-   GALLERY WIDGET
-   =============================== */
-
-
-.widget.gallery
-{
-}
-
-.widget.gallery ul {
-    display:block;
-    margin: 0;
-    padding:0px;
-    list-style: none;
-}
-
-.widget.gallery li {
-    float: left;
-    position: relative;
-    width: 33.3%;
-    padding-bottom: 33%;
-}
-
-.widget.gallery li  span.inner {
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-color: @color-swatch1;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.widget.gallery ul li.one-to-one span.inner
-{
-    background-size:100% 100%;
-}
-
-.widget.gallery ul li.portrait span.inner
-{
-    background-size:100% auto;
-}
-
-.widget.gallery ul li.landscape span.inner
-{
-    background-size:auto 100%;
-}
-
-.widget.gallery li span.inner {
-    position: absolute;
-    left: 5px;
-    right: 5px;
-    top: 0px;
-    bottom: 16px;
-    overflow: hidden;
-}
-
-.widget.gallery li span.inner img {
-    display:none;
-}
-
-.widget.gallery ul:before,
-.widget.gallery ul:after {
-  content: " ";
-  display: table;
-}
-.widget.gallery ul:after {
-  clear: both;
-}
-.widget.gallery ul {
-  *zoom: 1;
-}
-
-.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: -310px;
-    max-height: 284px;
-    background:@color-swatch1;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    text-align: center;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    font-family:@font-swatch5-font-family;
-    font-size:@font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height:@font-swatch5-line-height;
-    color:@color-swatch1;
-    letter-spacing: @font-swatch5-letter-spacing;
-}
-.widget.gallery li span.inner:hover .title {
-   margin-bottom: 0;
-}
-
-.widget.gallery li span.inner .description {
-  display: none;
-}
-
-.widget.gallery li span.inner a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-/* Lightbox */
-
-.lb-data .lb-caption, .lb-data .lb-number {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:lighten(@font-swatch5-color,50%);
-}
-
-.lb-data .lb-number {
-  font-size:bkscale(@font-swatch5-font-size,0.9);
-}
-
-
-/* ===============================
-   DIVIDER WIDGET
-   =============================== */
-
-.widget.line {
-    padding: 20px 0;
-}
-
-hr.line {
-   background-color: lighten(@color-swatch5,18%);
-   height: 1px;
-   width: 100%;
-   border: none;
-}
-
-hr.line.align-left {
-   margin: 20px auto 20px 0px;
-}
-
-hr.line.align-center {
-   margin: 20px auto;
-}
-
-hr.line.align-right {
-   margin: 20px 0px 20px auto;
-}
-
-
-/* =======================================
-   CLICK TO CALL
-   ==================================== */
-
-.widget.clicktocall {
-    padding: 8px 0
-}
-
-.widget.clicktocall a {
-    background-image: image('/images/ic-call-desktop.svg');
-    background-size: 7px;
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding: 4px 0 4px 18px;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-    text-decoration: none;
-}
-
-.widget.clicktocall a:hover {
-    cursor: pointer;
-}
-
-.widget.clicktocall a:active {
-    box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
-}
-
-/* ===============================
-   REDIRECT WIDGET
-   =============================== */
-
-.widget.redirecttodesktop {
-    padding: 8px 0;
-}
-
-.widget.redirecttodesktop a {
-    padding-right: 30px;
-    padding-top: 2px;
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 12px;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    text-decoration: none;
-    cursor: pointer;
-    color: @font-swatch5-color;
-    font-family: @font-swatch5-font-family;
-
-}
-
-.widget.redirecttodesktop a:hover, .desktop a:active {
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/* ===============================
    TWITTER WIDGET
    =============================== */
 
-
 .widget.twitter {
-  margin: 20px 0;
-}
-
-.widget.twitter p {
-  font-size: 1.5em;
-  line-height: 1.6em;
-}
-
-.widget.twitter a {
-   color: @font-swatch5-color;
-   text-decoration: none;
-   padding-bottom: 4px;
-}
-
-.widget.twitter span a {
-  border-bottom: 0;
-  font-size: 11px;
-  color: @color-swatch3;
-}
-
-.widget.twitter a:hover {
-
-}
-
-.widget.twitter ul {
-    padding: 0px;
-    margin: 0;
-}
-
-.widget.twitter ul li {
-    border-bottom: none;
-    list-style: none;
-    font-family: @font-swatch5-font-family;
-    font-size: .6em;
-    color: @font-swatch5-color;
-    padding-bottom: 30px;
-}
-
-.widget.twitter ul li:last-child {
-    padding-bottom: 0px;
-}
-
-.widget.twitter .twitter-profile-pic {
-    float: left;
-    margin-right: 20px;
-}
-
-.widget.twitter .twitter-profile-pic a {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.widget.twitter .twitter-content span.bk-full-name {
-    font-family: @font-swatch4-font-family;
-    color: @color-swatch3;
-}
-
-.widget.twitter span, .widget.twitter time {
-    font-size: 13px;
-}
-
-
-/* ===============================
-   SIGN UP
-   =============================== */
-
-
-.widget.signupform form {
-    display: block;
-    margin: 0 0 20px;
-    background-color: @color-swatch1;
-}
-
-.widget.signupform fieldset {
-    border: none;
-    padding: 0;
-}
-
-.widget.signupform fieldset label {
-    width: 100%;
-    float: left;
-    font-family:@font-swatch4-font-family;
-    font-size:font-swatch4-font-size;
-    font-weight:@font-swatch4-font-weight;
-    line-height:@font-swatch4-line-height;
-    color:@color-swatch3;
-    letter-spacing: @font-swatch4-letter-spacing;
-}
-
-.widget.signupform fieldset input {
-    height: 40px;
-    width: 63%;
-    background-color: darken(@color-swatch1,5%);
-    border: 1px solid darken(@color-swatch1,10%);
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 12px;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-
-.widget.signupform fieldset textarea {
-    height: 132px;
-    width: 100%;
-    background-color: darken(@color-swatch1,5%);
-    border: 1px solid darken(@color-swatch1,10%);
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 8px;
-    padding-top: 14px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: none;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-
-.widget.signupform fieldset input:focus, .widget.signupform fieldset textarea:focus {
-  outline: none;
+    padding: 20px 0;
+    margin: 20px 0;
+        p {
+            color: @color-swatch4;
+            padding: 0;
+            font-family: @font-swatch5-font-family;
+            line-height: @font-swatch5-line-height;
+            font-size: @font-swatch5-font-size;
+        } 
+        ul {
+            li {
+                padding: 10px 0;
+            }
+        }
+        ul li a:hover {
+            text-decoration: none;
+        }
+        // Tweet Content
+        .twitter-profile-pic {
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+            width: 12%;
+            margin-right: 1%;
+            @media @tablet {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        .twitter-content {
+            float: none;
+            display: inline-block;
+            width: 85%;
+        span.bk-full-name {
+            color: @font-swatch4-color;
+            font-family: @font-swatch4-font-family;
+            font-size: @font-swatch4-font-size;
+            line-height: @font-swatch4-line-height;
+        }
+        // Tweet Link
+        p a {
+            color: @color-swatch5;
+            text-decoration: none;
+            font-family: @font-swatch5-font-family;
+            line-height: @font-swatch5-line-height;
+            font-size: @font-swatch5-font-size;
+        }
+        a:hover span.bk-full-name {
+            color: @font-swatch4-color;
+        }
+        span a {
+            text-decoration: none;
+            &:hover {
+                color: @color-swatch2;
+                text-decoration: none;
+            }
+        }
+        p {
+            color: @color-swatch5;
+            margin-top: 4px;
+            &:last-child {
+                font-weight: inherit;
+            }
+        }
+        // Extra Info
+        span, span a, p:last-child {
+            font-size: 13px;
+            color: @color-swatch3;
+            font-weight: inherit;
+            &:hover {
+                color: darken(@color-swatch3, 15%);
+            }
+        }
+    }
 }
 
 /* PLACEHOLDER CSS */
@@ -1282,285 +609,20 @@ hr.line.align-right {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    @color-swatch5;
 }
-
-.widget.signupform fieldset button.btn {
-  padding: 17px 56px;
-  border: 0;
-  font-family: @font-swatch2-font-family;
-  font-size: .9em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  color: @font-swatch7-color;
-  text-decoration: none;
-          -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
-  
-.widget.signupform fieldset button.btn:hover {
-  background-color: @font-swatch7-background-color-hover;
-  cursor: pointer;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-}
-
-.widget.signupform fieldset button.btn.justifyleft
-{
-    text-align: left;
-}
-
-.widget.signupform fieldset button.btn.justifycenter
-{
-    text-align: center;
-}
-
-.widget.signupform fieldset button.btn.justifyright
-{
-    text-align: right;
-}
-
-.widget.signupform fieldset button.btn.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.signupform fieldset button.btn.italic {
-    font-style: italic;
-}
-
-.widget.signupform fieldset button.btn.bold {
-    font-weight: bold;
-}
-
-/* ===============================
-   CONTACT FORM WIDGET
-   =============================== */
-
-.widget.contactform form {
-    display: block;
-    margin: 0 0 20px;
-}
-
-.widget.contactform fieldset {
-    border: none;
-    padding: 0;
-}
-
-.widget.contactform fieldset label {
-    width: 100%;
-    float: left;
-    font-family:@font-swatch4-font-family;
-    font-size:font-swatch4-font-size;
-    font-weight:@font-swatch4-font-weight;
-    line-height:@font-swatch4-line-height;
-    color:@color-swatch3;
-    letter-spacing: @font-swatch4-letter-spacing;
-}
-
-.widget.contactform fieldset input {
-    height: 50px;
-    width: 100%;
-    background-color: darken(@color-swatch1,5%);
-    border: 1px solid darken(@color-swatch1,10%);
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 12px;
-    margin-top: 6px;
-    margin-bottom: 30px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    padding: 0;
-}
-
-.widget.contactform fieldset textarea {
-    height: 132px;
-    width: 100%;
-    background-color: darken(@color-swatch1,5%);
-    border: 1px solid darken(@color-swatch1,10%);
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 8px;
-    padding-top: 14px;
-    margin-top: 6px;
-    margin-bottom: 20px;
-    resize: none;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    padding: 0;
-}
-
-.widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
-  outline: none;
-}
-
-/* PLACEHOLDER CSS */
-
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    @color-swatch5;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:   @color-swatch5;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    @color-swatch5;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    @color-swatch5;
-}
-
-.widget.contactform fieldset button.btn {
-  padding: 17px 45px;
-  border: 0;
-  font-family: @font-swatch2-font-family;
-  font-size: .9em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  color: @font-swatch7-color;
-  text-decoration: none;
-          -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
-  
-.widget.contactform fieldset button.btn:hover {
-  background-color: @font-swatch7-background-color-hover;
-  cursor: pointer;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-}
-
-.widget.contactform fieldset button.btn.justifyleft
-{
-    text-align: left;
-}
-
-.widget.contactform fieldset button.btn.justifycenter
-{
-    text-align: center;
-}
-
-.widget.contactform fieldset button.btn.justifyright
-{
-    text-align: right;
-}
-
-.widget.contactform fieldset button.btn.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.contactform fieldset button.btn.italic {
-    font-style: italic;
-}
-
-.widget.contactform fieldset button.btn.bold {
-    font-weight: bold;
-}
-
-/* ===============================
-   PROFILE WIDGET
-   =============================== */
-
-.widget.profile span {
-  display: block;
-  font-family: @font-swatch5-font-family;
-  font-size: @font-swatch5-font-size;
-  line-height: @font-swatch5-line-height;
-  color: @font-swatch5-color;
-}
-
-
-/* ===============================
-   TWEET THIS WIDGET
-   =============================== */
-
-.widget.tweet {
-   padding: 18px 0; 
-}
-
-.widget.tweet a {
-  padding: 15px 20px 15px 50px;
-  margin: 0;
-  border: none;
-  background-repeat: no-repeat;
-  background-position: 18px;
-  font-family: @font-swatch2-font-family;
-  font-size:.9em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  color: @color-swatch1;
-  text-decoration: none;
-        -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
-
-.widget.tweet a:hover, .tweet a:active {
-  padding: 15px 20px 15px 40px;
-  background-image: image('/images/twitter.png');
-  background-repeat: no-repeat;
-  background-position: 18px;
-  cursor: pointer;
-  background-color: @font-swatch7-background-color-hover;
-  cursor: pointer;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-}
-
 
 /* ==================================
    SOCIAL BAR WIDGET / SOCIAL PROFILE
    =============================== */
 
-.widget.socialicons,
-.widget.profile .bk-profile-socialicons {
-    padding: 10px 0;
-    font-size: 1em;
-    font-family: @font-swatch7-font-family;
-}
-
-.widget.profile .bk-profile-socialicons span {
-    display: inline-block;
-}
-
 .widget.socialicons span a,
 .widget.profile .bk-profile-socialicons span a {
-    background-color: @font-swatch7-background-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 18px;
-    display: inline-block;
-    margin-right: 6px;
-    margin-bottom: 8px;
-    width: 32px;
-    height: 32px;
-    box-shadow: 0 0 0 3px rgba(110,110,110,0.1);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    text-decoration: none;
-    text-indent: -99999px;
-    white-space: nowrap;
 }
 
-.widget.profile .bk-profile-socialicons span a {
-    box-shadow: 0 0 0 3px rgba(110,110,110,0.4);
-    margin-right: 10px;
-}
-
-.widget.socialicons span a:hover,
-.widget.profile .bk-profile-socialicons span a:hover {
-    background-color: @font-swatch7-background-color-hover
+.icons.widget-align-right, .icons.align-right, .icons div.align-right, .icons.widget-align-left, .icons.align-left, .icons div.align-left {
+    float: none;
 }
 
 /* SVG ICONS */
@@ -1627,11 +689,41 @@ hr.line.align-right {
     background-image: image('/images/social/socialicons-youtube.png')
 }
 
+/* ===============================
+   GALLERY
+   =============================== */
 
+.widget.gallery ul li span.inner {
+    .title {
+        color: @color-swatch1;
+        font-weight: @font-swatch3-font-weight;
+        font-size: bkscale(@font-swatch4-font-size, 1.1);
+        margin-bottom: 0.3em;
+    }
+    .description {
+        color: @color-swatch1;
+    }
+}
+
+.widget.gallery .inner .image-data {
+    background: fade(@color-swatch4, 65%);
+    display: block;
+    opacity: 0;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.widget.gallery .inner:hover .image-data {
+    .transition( opacity, 0.5s, ease );
+    opacity: 1;
+}
 
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
+
 .widget.responsiveslideshow {
     .slideshow-image-list,
     .slideshow-widget {
@@ -1754,6 +846,679 @@ hr.line.align-right {
 }
 
 /* ===============================
+   ECOM
+   =============================== */
+
+.productlist-filter {
+   margin: 0 auto;
+  .form-group {
+     box-sizing: border-box;
+  }
+  label {
+    display: block;
+  }
+}
+
+.productlist-display-form .form-group {
+  padding: 10px;
+  margin: 0;
+  float: left;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
+  margin-right: 0;
+}
+
+.form-group.productlist-search:before {
+  padding-bottom: .4em;
+}
+
+.form-group.productlist-search {
+  padding-left: 0;
+  position: relative;
+  input[type=search] {
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  button {
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    border-radius: 0 50px 50px 0;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+    width: auto;
+    vertical-align: top;
+  }
+}
+
+.ecom-product-go-to-checkout-btn {
+  font-family: @font-swatch7-font-family;
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+  min-height: 50px;
+  font-size: @font-swatch7-font-size;
+  font-weight: @font-swatch7-font-weight;
+  -webkit-font-smoothing: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button.btn {
+  line-height: 24px;
+  font-size: 14px;
+  padding: 8px 14px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  font-size: @font-swatch7-font-size;
+  font-family: @font-swatch7-font-family;
+}
+
+label {
+  display: inline-block;
+  padding-bottom: .4em;
+}
+
+select {
+  background-color: transparent;
+  border: 1px solid lighten(@color-swatch5, 25%);
+  color: @font-swatch5-color;
+  line-height: 20px;
+  font-size: 13px;
+  text-indent: 0;
+  width: 100%;
+  padding: 8px 10px 10px;
+  outline: none;
+  -webkit-transition: border .2s;
+  -moz-transition: border .2s;
+  -ms-transition: border .2s;
+  transition: border .2s;
+  border-radius: 0;
+  height: 45px;
+}
+
+.productlist-item-count {
+  clear: both;
+}
+
+.ecom-productslist-product a:hover {
+  text-decoration: none;
+}
+
+.widget.ecomproduct .ecom-product .ecom-product-cattag {
+  margin: 10px 0 10px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .productlist-display-form {
+    label {
+      display: block;
+    }
+    select {
+      width: 100%;
+    }
+  }
+  .productlist-display-form .form-group {
+    float: none;
+    width: 100%;
+    padding: 0;
+
+  } 
+  .form-group.productlist-search button {
+    bottom: 0;
+    width: 20%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .productlist-display-form {
+    select, label {
+      width: 100%;
+    }
+  }
+}
+
+.widget.ecomproduct .ecom-product .ecom-product-preview-image-wrap {
+  text-align: left;
+}
+
+.widget.ecomproduct .ecom-product .ecom-product-go-to-checkout-btn {
+  margin: 10px 0;
+  float: left;
+  padding: 0 12px;
+  font-weight: 600;
+}
+
+.widget.ecombasketsummary {
+  table {
+    border: 1px solid lighten(@color-swatch5, 20%);
+    border-spacing: 0;
+    padding: 30px;
+    width: 100%;
+    list-style: none;
+    font-size: 18px;
+    color: @color-swatch4;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    @media @mobile {
+      padding: 10px;
+    }
+    tr:first-child { 
+      @media @mobile {
+          display: table-header-group;
+          th:nth-child(2) {
+            display: none;
+          }
+          th:nth-child(3) {
+            padding-left: 12px;
+          }
+      }
+    }
+    th {
+      text-align: left;
+    }
+    .basket-summary-items {
+      background: transparent;
+      td:first-child {
+        width: 25%;
+      }
+      @media @mobile {
+        display: table-row-group;
+        + tr {
+          display: block;
+        }
+      }
+      &:last-child {
+        td {
+          padding-bottom: 25px;
+        }
+      }
+      .image-wrap {
+        background-position: -9999px;
+        background-size: contain;
+        img {
+            max-width: 90%!important;
+        }
+      }
+      td:nth-child(2) {
+        padding-left: 15px;
+      }
+      .basket-summary-pricepu, .basket-summary-quantity, .basket-summary-amount {
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height;
+      }
+      .basket-summary-pricepu {
+        display: block;
+      }
+      .basket-summary-quantitybtn {
+        display: block;
+        span {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      .basket-summary-quantity {
+        display: inline-block;
+        button {
+          height: auto;
+          line-height: initial;
+        }
+      }
+      .basket-summary-amount {
+        color: darken(@color-swatch4, 10%);
+      }
+    }
+    .basket-summary-subtotal {
+      color: darken(@color-swatch4, 10%);
+      display: block;
+      font-size: bkscale(@font-swatch5-font-size, 1.05);
+      line-height: bkscale(@font-swatch5-font-size, 1.1);
+      margin-top: 25px;
+      padding: 10px 10px 5px;
+    }
+  }
+}
+
+.basket-summary-submit, .basket-summary-empty-cta {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; 
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0 12px;
+  line-height: 45px;
+  height: 45px;
+  font-weight: @font-swatch7-font-weight;
+}
+
+/* ===============================
+   BLOG
+   =============================== */
+
+.widget {
+    &.blogpost, .blog-post-list {
+        .blog-post-feature-image-wrap {
+            line-height: 0;
+            background-size: contain;
+            background-position: left;
+            margin: 20px 0 25px;
+            height: 300px;
+            width: auto;
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+.blog-search-form {
+    label {
+        display: block;
+    }
+}
+
+.blog-post-sharing {
+    margin-top: 20px;
+    .btn.facebook {
+        background-color: #3B5998;
+    }
+    .btn.twitter {
+        background-color: #00ACED;
+    }
+    .btn.googleplus {
+        background-color: #dd4b39;
+    }
+}
+
+/* 8. Menu */
+
+.widget {
+    &.menusections {
+        ul {
+          background-color: @color-swatch3;
+            border: 2px solid lighten(@font-swatch5-color, 65%);
+            padding: 0;
+            text-align: center;
+            li {
+              padding: 1em;
+              margin: 0;
+              &:hover {
+                background: darken(@color-swatch3, 5%);
+              }
+            }
+            li a {
+              color: @color-swatch1;
+              font-family: @font-swatch7-font-family;
+              font-size: bkscale(@font-swatch7-font-size, 1.1); 
+              font-weight: @font-swatch7-font-weight;
+              line-height: @font-swatch7-line-height;
+            }
+        }
+    }
+}
+
+.menu {
+    .menu-item-image-wrap {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180px;
+        margin: 0.25em 0 0.75em;
+        background-position: center;
+        img {
+            display: none;
+        }
+    }
+    .menu-header {
+        margin: 2em 0 2.5em;
+        text-align: center;
+        h1 {
+          font-size: bkscale(@font-swatch2-font-size, 1.1);
+          line-height: bkscale(@font-swatch2-line-height, 1.1);
+          padding-bottom: 0;
+        }
+        p {
+            color: lighten(@font-swatch5-color, 35%);
+            font-size: @font-swatch4-font-size;
+            line-height: @font-swatch4-line-height;
+            padding: 5px 0 0;
+        }
+    }
+    .menu-subsection {
+        padding: 0;
+        .menu-subsection-header {
+            padding: 20px 0;
+            h2 {
+                color: @color-swatch4;
+            }
+        }
+    }
+    .menu-item-nutritional-title {
+        font-size: bkscale(@font-swatch5-font-size, 0.96);
+        &:before {
+            content: "\2014";
+            color: lighten(@font-swatch5-color, 35%);
+            display: block;
+            padding-bottom: 20px;
+            padding-top: 8px;
+            line-height: 8px;
+        }
+    }
+    .menu-item-nutritional-prop  {
+        font-size: bkscale(@font-swatch5-font-size, 0.9);
+        line-height: @font-swatch5-line-height;
+    }
+    .menu-section-item-dietary-props .dietary-icon {
+        background: fade(@color-swatch5, 15%);
+        font-size: bkscale(@font-swatch5-font-size, 0.82);
+        padding: 4px 10px;
+        margin-top: 15px;
+    }
+    .menu-subsection-promoted, .menu-items li.menu-item-promoted {
+        background-color: lighten(@color-swatch5, 30%);
+        padding: 2em;
+        @media @mobile {
+            padding: 1em;
+        }
+        ol {
+            padding-bottom: 0;
+        }
+        .menu-subsection-header {
+            padding: 20px 0 12px;
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .menu-subsection-promoted li.menu-item-promoted {
+      background-color: lighten(@color-swatch5, 25%);
+    }
+    .menu-subsection-name {
+        color: @font-swatch2-color;
+        margin-bottom: 0.25em;
+    }
+    .menu-item-description {
+    }
+    .menu-item-price p {
+        color: @color-swatch3;
+        font-size: bkscale(@font-swatch5-font-size, 1.12);
+    }
+}
+
+/* Forms */
+
+input, textarea {
+    background-color: @color-swatch7;
+    border: 1px solid lighten(@color-swatch5, 25%);
+    -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
+    padding: 12px;
+    @media @mobile {
+        font-size: bkscale(@font-swatch5-font-size, 0.9);
+    }
+    &:hover, &:focus {
+        border: 1px solid lighten(@color-swatch5, 15%)!important;
+        transition: ease .5s border!important;
+    }
+}
+
+input {
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.ecom-product-go-to-checkout-btn {
+    font-family: @font-swatch7-font-family;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    min-height: 40px;
+    font-size: @font-swatch7-font-size;
+    font-weight: @font-swatch7-font-weight;
+    -webkit-font-smoothing: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.widget.ecombasketsummary a {
+  font-family: @font-swatch7-font-family;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    min-height: 40px;
+    font-size: @font-swatch7-font-size;
+    font-weight: @font-swatch7-font-weight;
+    -webkit-font-smoothing: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button:hover, button.btn:hover, .widget.tweet a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
+    background-color: @font-swatch7-background-color-hover;
+    .transition(all, 0.5s, ease);
+}
+
+input, .widget.profile form fieldset input, .widget.tweet a, .widget.ecombasket .ecombasket-pull, .widget.paypalbuynow .widget.button.paypal, .widget.ecomproduct .ecom-product .ecom-product-go-to-checkout-btn, button {
+    line-height: 45px;
+    height: 45px;
+}
+
+.widget.paypalbuynow .widget.button.paypal, .widget.tweet a, .widget.dropbox button {
+    padding: 0 12px 0 40px;
+}
+
+input.blog-search-input, .widget.signupform input, .widget.profile form fieldset input {
+    margin-right: 0;
+}
+
+button.blog-search-submit-button, .widget.signupform button, .widget.profile button {
+    vertical-align: top;
+}
+
+.widget.paypalbuynow .widget.button.paypal:hover {
+    background-color: @font-swatch7-background-color-hover;
+    border: none!important;
+    .transition(all, 0.5s, ease);
+}
+
+button.btn {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.widget {
+    &.contactform {
+        label {
+            font-family: @font-swatch3-font-family;
+            font-size: @font-swatch3-font-size;
+            font-weight: @font-swatch3-font-weight;
+            line-height: @font-swatch3-line-height;
+            margin: 16px 0 8px;
+        }
+        input, textarea {
+            border: 1px solid lighten(@color-swatch5, 25%);
+            &.email {
+                @media @mobile {
+                    width: 100%;
+                }
+            }
+        }
+        button.btn {
+            padding: 0 12px;
+            margin-top: 10px;
+            line-height: 40px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            @media @mobile {
+                width: 100%;
+            }
+        }
+    }
+    &.profile {
+        form {
+            button {
+                padding: 0 12px;
+                position: relative;
+                margin-left: -4px;
+                vertical-align: top;
+                width: 25%;
+                -webkit-border-radius: 0 50px 50px 0;
+                -moz-border-radius: 0 50px 50px 0;
+                border-radius: 0 50px 50px 0;
+                @media @mobile {
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    border-radius: 50px;
+                    left: 0;
+                    margin-left: 0;
+                    margin-top: 10px;
+                    width: 100%;
+                }
+            }
+            fieldset input {
+                background: transparent;
+                border: 1px solid lighten(@color-swatch5, 25%);
+                width: 74%;
+                @media @mobile {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &.signupform fieldset {
+        button {
+            width: 20%;
+            padding: 0 12px;
+            position: relative;
+            vertical-align: top;
+            padding: inherit;
+            -webkit-border-radius: 0 50px 50px 0;
+            -moz-border-radius: 0 50px 50px 0;
+            border-radius: 0 50px 50px 0;
+            @media @mobile {
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+        input {
+            border: 1px solid lighten(@color-swatch5, 25%);
+            height: 45px;
+            width: 79%;
+            @media @tablet {
+                width: 65%;
+            }
+            @media @mobile {
+                width: 100%;
+            }
+        }
+    }
+    &.blogsearch {
+        margin: 10px 0;
+        input {
+            border: 1px solid lighten(@color-swatch5, 25%);
+            width: 79%;
+            @media @mobile {
+                width: 100%;
+            }
+        }
+        button {
+            background-color: @font-swatch7-background-color;
+            border: 0;
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight: @font-swatch7-font-weight;
+            color: @font-swatch7-color;
+            letter-spacing: inherit;
+            padding: 0 12px;
+            text-decoration: none;
+            position: relative;
+            width: 20%;
+            vertical-align: top;
+            -webkit-border-radius: 0 50px 50px 0;
+            -moz-border-radius: 0 50px 50px 0;
+            border-radius: 0 50px 50px 0;
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
+            }
+            @media @mobile {
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    }
+    &.button {
+        button.btn {
+            padding: 0 12px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
+            }
+        }
+    }
+}
+
+/* ===============================
    IPAD WIDTH
    =============================== */
 
@@ -1774,7 +1539,7 @@ hr.line.align-right {
   /* NAV */
 
   .widget.extendednavigation .bk-overlay {
-    top: 38px;
+    top: 38px!important;
   }
 
   .widget.extendednavigation {
@@ -1865,7 +1630,7 @@ hr.line.align-right {
    }
 
   .widget.feature .content {
-    height: 320px;
+    height: auto;
   }
 
   .widget.responsiveslideshow .slideshow-image-list {
@@ -1877,17 +1642,9 @@ hr.line.align-right {
       padding-bottom: 50%;
   }
 
-  .widget.feature button
-{
+  .widget.feature button {
   padding: 14px 26px;
-  font-size: 1em;
-}
 
- /* GALLERY */
-
-.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-font-size:bkscale(@font-swatch5-font-size,0.9);
-line-height:bkscale(@font-swatch5-line-height,0.9);
 }
 
 /* SLIDESHOW */
@@ -1900,23 +1657,22 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
   background-size: contain;
 }
 
+.form-group.productlist-search {
+  input[type=search] {
+    width: 100%;
+  }
+  button {
+    margin-left: 0;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width : 650px) and (min-width : 481px) {
-   /* Tablet view: 2 tiles */
-   .widget.gallery li {
-      width: 50%;
-      /*padding-bottom: 50%;*/
-   }
 }
 
-@media only screen and (max-width : 1050px) and (min-width : 651px) {
-   /* Small desktop / ipad view: 3 tiles */
-   .widget.gallery li {
-      width: 33.3%;
-      /*padding-bottom: 33.3%;*/
-   }
-}
 
 /* ===============================
    IPHONE WIDTH
@@ -1955,7 +1711,6 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
   }
 
   .widget.feature h3 {
-    display: none;
   }
 
 .widget.feature button {
@@ -1967,7 +1722,7 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
    }
 
   .widget.feature .content {
-    height: 220px;
+    height: auto;
   }
 
   .widget.feature .content .spare {
@@ -1978,23 +1733,8 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
     margin-bottom: 20px;
   }
 
-   /* GALLERY */
-
-.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-max-height: 150px;
-}
-
-  /* SLIDESHOW */
-  .widget.responsiveslideshow .title {
-    padding-bottom:7px;
-  }
-
-  .widget.responsiveslideshow .description {
-    display:none;
-  }
 
  /* SIGN UP */
-
 
 
  .widget.signupform fieldset button.btn {
@@ -2014,54 +1754,6 @@ max-height: 150px;
   transition: background-color 0.15s ease-in-out;
 }
 
-
-    /* CLICK TO CALL */
-
-    .widget.clicktocall a {
-        background-image: image('/images/ic-call.svg');
-        background-size: 7px;
-        background-position: 14px center;
-        background-repeat: no-repeat;
-        background-color: @font-swatch7-background-color;
-
-        font-family: @font-swatch7-font-family;
-        font-size: .75em;
-        font-weight: @font-swatch7-font-weight;
-        line-height: @font-swatch7-line-height;
-        color: @font-swatch7-color;
-        letter-spacing: @font-swatch7-letter-spacing;
-        background-color: @font-swatch7-background-color;
-        padding: 12px 12px 12px 34px;
-        border: 1px solid darken(@color-swatch3,5%);
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-        text-decoration: none;
-        text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-    }
-
-    .widget.clicktocall a:hover {
-        background-color: @font-swatch7-background-color-hover;
-        cursor: pointer;
-    }
-
-    .widget.clicktocall a:active {
-        box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
-    }
-
-  /* GALLERY */
-
-  .widget.gallery p
-  {
-    padding: 10px;
-  }
-
-  /* Smartphone view: 1 tile */
-  .widget.gallery li {
-      width: 100%;
-      padding-bottom: 100%;
-  }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -2106,7 +1798,7 @@ max-height: 150px;
     display:none;
 }
 
-#featuregallery .widget.gallery li span.inner {
+#featuregallery .widget.gallery li span.inner, #featuregallery .widget.gallery li span.inner a {
     position: static;
     left: auto;
     right: auto;
@@ -2124,6 +1816,10 @@ max-height: 150px;
 .no-js #featuregallery .widget.gallery  .gallery-widget li,
 .no-cssanimations #featuregallery .gallery-widget li {
   opacity: 1;
+}
+
+.widget.gallery .inner:hover .image-data {
+  display: none;
 }
 
 #featuregallery .widget.gallery .gallery-widget li img {
