@@ -395,14 +395,16 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   padding: 40px;
   margin: 0 auto;
 
-  &:after {
-    content: "";
-    background: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  @media @mobile {
+    &:after {
+      content: "";
+      background: rgba(255, 255, 255, 0.35);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 
   h2, h3, .feature-btn {

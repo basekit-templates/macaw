@@ -13,7 +13,7 @@
 </header>
 
 <div class="main wrapper clearfix">
-    <div id="featuregallery" class="js-isotope" data-isotope-options='{ "columnWidth": 200, "itemSelector": "li" }'>
+    <div id="featuregallery">
         {{widget('gallery', 'featuregallery', {})|raw}}
     </div>
     {{zone('main')|raw}}
@@ -33,11 +33,5 @@
         </div>
     </div>
 </footer>
-
-
-
-<script src="{{asset('assets/isotope.js')}}"></script>
-
-
 
 {% endblock %}
