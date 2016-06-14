@@ -1,7 +1,7 @@
 {
     "name":"Macaw",
     "thumbnail":"macaw.png",
-    "screenshot":"macaw.png",
+    "screenshot":"macaw-screenshot.jpg",
     "pageTypes": ["home", "gallery"],
     "tags": {
         "en": ["minimal", "clean", "photography", "modern", "colorful", "colourful", "company", "business", "independent", "art", "portfolio", "animal", "university", "open", "simple"],
