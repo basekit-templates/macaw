@@ -1,5 +1,6 @@
 {
     "name":"Macaw",
+    "versionTenCompatible": 1,
     "thumbnail":"macaw.png",
     "screenshot":"macaw-screenshot.jpg",
     "pageTypes": ["home", "gallery"],
