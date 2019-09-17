@@ -108,14 +108,21 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 .bk-header {
-  padding: 20px 0;
+  padding: 30px 0;
   background-color: @color-swatch7;
   border-bottom: 1px solid lighten(@color-swatch4, 40%);
 }
 
+.bk-header .wrapper {
+  .flex-display;
+  .align-items(center);
+  .flex-wrap(wrap);
+}
+
 .companyheader {
   display: inline-block;
-  padding: 10px 0 0;
+  .flex(1 1 auto);
+  padding: 0;
   width: 30%;
   vertical-align: top;
 }
@@ -150,6 +157,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .widget.logo {
   display: inline-block;
+  line-height: 1;
   margin-right: 5px;
   vertical-align: middle;
 }
@@ -222,6 +230,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    EXTENDED NAVIGATION
    =============================== */
 
+[data-widget-type="logo"] + .widget.extendednavigation a.pull,
+[data-widget-type="companyname"] + .widget.extendednavigation a.pull {
+  top: -20px;
+}
+
 .main .widget.extendednavigation {
     max-width: 100%;
     width: 100%;
@@ -246,14 +259,15 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .widget.extendednavigation {
   display: inline-block;
+  .flex(1 1 auto);
   position: relative;
-  width: 70%;
   margin-left: -4px;
   vertical-align: bottom;
 }
 
-.widget.extendednavigation a.pull {
-  top: 38px;
+.widget.extendednavigation a.pull,
+.bk-tpl-hidden + .widget.extendednavigation a.pull {
+  top: 0;
 }
 
 .widget.extendednavigation ul {
@@ -265,6 +279,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   float: left;
   display: block;
   text-align: left!important;
+}
+
+.widget.extendednavigation ul li:last-child a {
+  padding-right: 0;
 }
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
@@ -1539,13 +1557,14 @@ button.btn {
   .companyheader {
     float: left;
     max-width: 85%;
-    padding: 20px 0 10px;
+    padding: 0;
     width: auto;
     display: block;
   }
 
   .bk-header {
-    padding: 15px 0;
+    min-height: 60px;
+    padding: 25px 0;
   }
 
   /* NAV */
@@ -1572,7 +1591,7 @@ button.btn {
   .widget .extendednavigation ul {
     width: 100%;
     display: none;
-    padding: 0 0 20px;
+    padding: 30px 0 20px;
   }
 
   .widget .extendednavigation li {
